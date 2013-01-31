@@ -49,26 +49,26 @@ body {
     font-size: 36px;
     text-align: right;
     padding-right: 10px;
-    padding-top: 8px;
+    padding-top: 12px;
     line-height: 90%;
+    
     border-right-style: solid; 
-    border-right-width: 4px; 
+    border-right-width: 5px; 
     border-right-color: #333333;
     width: 20;
     float: left;
     left: 5px;
-    top: -5px;
+    top: -10px;
     position: relative;
 }
 
 .subtext_right {
 
     font-family: komika;
-    color: #333333;
     font-size: 50px;
     text-align: left;
-    padding-left: 15px;
-    padding-bottom: 5px;
+    padding-left: 35px;
+    padding-bottom: 10px;
     //width: 190px;
     left: 0;
      top: -20px;
@@ -76,24 +76,31 @@ body {
     line-height: 90%;
     
     position: relative;
+    
+    display:inline-block;
+    transform:scale(2,1); /* W3C */
+    -webkit-transform:scale(1.3,1); /* Safari and Chrome */
+    -moz-transform:scale(1.3,1); /* Firefox */
+    -ms-transform:scale(1.3,1); /* IE 9 */
+    -o-transform:scale(1.3,1); /* Opera */
+    letter-spacing: 0.015em
 }
-
 a:link {
-  color: #333333;
+  color: #444444;
   text-decoration: none;
 }
 a:visited {
-  color: #333333;
+  color: #444444;
   text-decoration: none;
 }
 #resumelink:hover {
-  color: #ff3333;
+  color: #ff4444;
 }
 #resumelink:active {
   color: #ff0000;
 }
 #biolink:hover {
-  color: #33ff33;
+  color: #44ff44;
 }
 #biolink:active {
   color: #00ff00;
