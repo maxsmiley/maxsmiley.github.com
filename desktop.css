@@ -1,0 +1,99 @@
+@font-face {
+	font-family: great_lakes;
+	src: url('fonts/GREALN__.ttf');
+}
+@font-face {
+	font-family: matchbook;
+	src: url('fonts/Matchbook.otf');
+}
+@font-face {
+	font-family: komika;
+	src: url('fonts/KomikaTitle-Kaps.ttf');
+}
+
+body {
+  background-color: #111111;
+  // background-color: #dddddd;
+}
+.title {
+    font-family: great_lakes;
+    color: #333333;
+    font-size: 64px;
+}
+.strip {
+ position: absolute;
+ top: 10%;
+ left: 0;
+ width: 100%;
+ background-color: #dddddd;
+
+}
+.strip title {
+ width 320px;
+}
+.strip_box {
+ width: 320px;
+ position: relative;
+ left: 13%;
+ //height 10%;
+}
+.subtext {
+  width: 100%;
+  height:90px;
+}
+.subtext_left {
+
+    font-family: matchbook;
+    color: #333333;
+    font-size: 36px;
+    text-align: right;
+    padding-right: 10px;
+    padding-top: 8px;
+    line-height: 90%;
+    border-right-style: solid; 
+    border-right-width: 4px; 
+    border-right-color: #333333;
+    width: 20;
+    float: left;
+    left: 5px;
+    top: -5px;
+    position: relative;
+}
+
+.subtext_right {
+
+    font-family: komika;
+    color: #333333;
+    font-size: 50px;
+    text-align: left;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    //width: 190px;
+    left: 0;
+     top: -20px;
+    float: left;
+    line-height: 90%;
+    
+    position: relative;
+}
+
+a:link {
+  color: #333333;
+  text-decoration: none;
+}
+a:visited {
+  color: #333333;
+  text-decoration: none;
+}
+#resumelink:hover {
+  color: #ff3333;
+}
+#resumelink:active {
+  color: #ff0000;
+}
+#biolink:hover {
+  color: #33ff33;
+}
+#biolink:active {
+  color: #00ff00;
+}
