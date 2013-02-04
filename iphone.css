@@ -1,0 +1,84 @@
+.title {
+    font-family: great_lakes;
+    color: #333333;
+    font-size: 84px;
+}
+h1 {
+    font-family: great_lakes;
+    color: #333333;
+    font-size: 84px;
+}
+.strip {
+ position: absolute;
+ top: 16%;
+ left: 0;
+ width: 100%;
+ background-color: #dddddd;
+}
+
+.strip_box {
+ width: 320px;
+ position: relative;
+ left: 5%;
+ float: left;
+}
+
+.strip_image {
+  height: 100%;
+  float: right;
+}
+
+.subtext {
+  width: 100%;
+  height:85px;
+}
+.subtext_left {
+
+    font-family: matchbook;
+    color: #333333;
+    font-size: 48px;
+    text-align: right;
+    padding-right: 10px;
+    padding-top: 12px;
+    line-height: 90%;
+    
+    border-right-style: solid; 
+    border-right-width: 5px; 
+    border-right-color: #333333;
+    float: left;
+    left: 5px;
+    top: -10px;
+    position: relative;
+}
+
+.subtext_right {
+    font-family: komika;
+    font-size: 64px;
+    text-align: left;
+    padding-left: 15px;
+    margin-left: 10px;  
+    padding-bottom: 10px;
+    left: 0;
+    top: -20px;
+    float: left;
+    line-height: 90%;
+    
+    position: relative;
+    
+    display:inline-block;
+    transform:scale(2,1); /* W3C */
+    -webkit-transform:scale(1.3,1); /* Safari and Chrome */
+    -moz-transform:scale(1.3,1); /* Firefox */
+    -ms-transform:scale(1.3,1); /* IE 9 */
+    -o-transform:scale(1.3,1); /* Opera */
+    letter-spacing: 0.015em
+}
+
+.triangle-topleft {
+	width: 0;
+	height: 0;
+	border-top: 125px solid red;
+	border-right: 125px solid transparent;
+	position: relative;
+	float: left;
+}
