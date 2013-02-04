@@ -96,10 +96,8 @@ h1 {
 }
 
 .selfy {
-z-index: 2;
-position: absolute;
-left: 60%;
-top: 14%;
+float: right;
+width 200px;
 }
 
 * {
