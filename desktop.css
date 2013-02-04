@@ -14,12 +14,8 @@
 	font-family: asap;
 	src: url('fonts/Asap-Regular.otf');
 }
-body {
-  //background-color: #111111;
-  // background-color: #dddddd;
-  //
-}
 .title {
+    width 320px;
     font-family: great_lakes;
     color: #333333;
     font-size: 64px;
@@ -41,9 +37,7 @@ h1 {
  background-color: #dddddd;
 
 }
-.strip title {
- width 320px;
-}
+
 .strip_box {
  width: 320px;
  position: relative;
