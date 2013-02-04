@@ -232,3 +232,11 @@ font-size: 40px;
 	position: relative;
 	float: left;
 }
+.triangle-topleft-green{
+	width: 0;
+	height: 0;
+	border-top: 100px solid green;
+	border-right: 100px solid transparent;
+	position: relative;
+	float: left;
+}
