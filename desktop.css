@@ -96,28 +96,30 @@ h1 {
 }
 
 .selfy {
-float: right;
-width 200px;
+  float: right;
+  width: 200px;
+  padding-right:10%;
+  height: 200px;
 }
 
 * {
-margin: 0; 
-padding: 0; 
+  margin: 0; 
+  padding: 0; 
 }
 
 .resume-main, .bio-main{
-font-family: asap;
+  font-family: asap;
   width: 775px; 
   margin: 40px auto 60px; 
-   background-color: #dddddd;
-   padding-right: 30px;
+  background-color: #dddddd;
+  padding-right: 30px;
 }
 .bio-main{
-   width: 725px; 
+  width: 725px; 
 }
 .clear { 
- clear: both; 
- }
+  clear: both; 
+}
  
 h2 { 
   font-size: 20px;
