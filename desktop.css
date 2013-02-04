@@ -10,7 +10,10 @@
 	font-family: komika;
 	src: url('fonts/KomikaTitle-Kaps.ttf');
 }
-
+@font-face {
+	font-family: asap;
+	src: url('fonts/Asap-Regular.otf');
+}
 body {
   //background-color: #111111;
   // background-color: #dddddd;
@@ -20,6 +23,15 @@ body {
     font-family: great_lakes;
     color: #333333;
     font-size: 64px;
+}
+h1 {
+ font-family: great_lakes;
+    color: #333333;
+    font-size: 64px;
+}
+#resume-title{
+  float: left;
+  padding-left: 50px;
 }
 .strip {
  position: absolute;
@@ -72,9 +84,9 @@ body {
     font-family: komika;
     font-size: 50px;
     text-align: left;
-    padding-left: 35px;
+    padding-left: 15px;
+    margin-left: 10px;  
     padding-bottom: 10px;
-    //width: 190px;
     left: 0;
      top: -20px;
     float: left;
@@ -96,6 +108,7 @@ padding: 0;
 }
 
 #resume-main {
+font-family: asap;
   width: 775px; 
   margin: 40px auto 60px; 
    background-color: #dddddd;
@@ -118,7 +131,7 @@ h2 span {
   font-style: italic; 
   font-family: Georgia, Serif; 
   font-size: 16px; 
-  color: #999; 
+  color: #ff4444; 
   font-weight: normal; 
 }
 
@@ -152,13 +165,30 @@ dt {
  // height: 100px; 
 
 }
-ul { 
-margin: 0 0 32px 17px;
+ul {
+    margin: 0.75em 0;
+    padding: 0 1em;
+    list-style: none;
 }
-    
+li:before { 
+    content: "";
+    border-color: transparent #111;
+    border-style: solid;
+    border-width: 0.35em 0 0.35em 0.45em;
+    display: block;
+    height: 0;
+    width: 0;
+    left: -1em;
+    top: 0.9em;
+    position: relative;
+}
+a {
+ font-family: komika;
+}
 a:link {
   color: #444444;
   text-decoration: none;
+  
 }
 a:visited {
   color: #444444;
@@ -176,11 +206,28 @@ a:visited {
 #biolink:active {
   color: #00ff00;
 }
-
-#triangle-topleft {
+.returnlink {
+font-size: 40px;
+  float: right;
+}
+.returnlink:hover {
+  color: #4444ff;
+}
+.returnlink:active {
+  color: #0000ff;
+}
+.triangle-topleft {
 	width: 0;
 	height: 0;
 	border-top: 100px solid red;
+	border-right: 100px solid transparent;
+	position: relative;
+	float: left;
+}
+.triangle-topleft-blue {
+	width: 0;
+	height: 0;
+	border-top: 100px solid blue;
 	border-right: 100px solid transparent;
 	position: relative;
 	float: left;
