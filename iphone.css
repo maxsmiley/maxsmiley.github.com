@@ -23,11 +23,6 @@ h1 {
  float: left;
 }
 
-.strip_image {
-  height: 100%;
-  float: right;
-}
-
 .selfy {
   float: right;
   width: 200px;
