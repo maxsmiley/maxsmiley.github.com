@@ -52,14 +52,20 @@ $(document).ready(function(){
 			}
 		});
 		*/
-		var trip;
+		var trip_request = $.getJSON( "https://straight-trippin.herokuapp.com/get_trip?name=Roadtrip", function() {
+		  console.log( "success" );
+		})
+		.done(function(data) { console.log( data ); })
+		.fail(function() { console.log( "error" ); })
+		.always(function() { console.log( "complete" ); });
+		/*var trip;
 		console.log("requesting..");
 		var direction_req = "https://straight-trippin.herokuapp.com/get_trip?name=Roadtrip";
 		$.get(direction_req, function(data, status){
-			if(status == 400){
+			if(status == 200 || status == ){
 				trip = data;
 				console.log(trip);
-				/*var dests = trip["destinations"];
+				var dests = trip["destinations"];
 				var origin = dests.first();
 				var destination = dests.last();
 				dests = dest.splice(1, dest.length -1);
@@ -76,10 +82,11 @@ $(document).ready(function(){
 					directionsService.route(request, function(result, status) {
 					if (status == google.maps.DirectionsStatus.OK) {
 						directionsDisplay.setDirections(result);
-					}*/
+					}
 				//});
 			}
 		});
+*/
 		console.log("done.");
 			/*request = 
 		{
