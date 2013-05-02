@@ -62,7 +62,7 @@ $(document).ready(function(){
 		var waypoints;
 		var request;
 		request["origin"] = origin;
-		for(int i = 0; i < dest.length; i ++){
+		for(var i = 0; i < dest.length; i ++){
 			waypoints[i]["location"]= dests[i];
 			waypoints[i]["stopover"]= true;
 		}
