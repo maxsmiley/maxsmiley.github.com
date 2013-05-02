@@ -70,9 +70,11 @@ $(document).ready(function(){
 		}
 		directionsService.route(request, function(result, status) {
 			if (status == google.maps.DirectionsStatus.OK) {
-				
+
 		alert("yes");
 				directionsDisplay.setDirections(result);
+			}else{
+				alert("NO");
 			}
 		});
 	}
