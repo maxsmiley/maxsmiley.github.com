@@ -56,6 +56,14 @@ $(document).ready(function(){
 		request = 
 		{
        origin: 'Chicago', 
+        waypoints: [
+		    {
+		      location:"Joplin, MO",
+		      stopover:false
+		    },{
+		      location:"Oklahoma City, OK",
+		      stopover:true
+		    }],
        destination: 'New York',
        travelMode: google.maps.DirectionsTravelMode.DRIVING
      };
@@ -76,11 +84,8 @@ $(document).ready(function(){
 		};*/
 		directionsService.route(request, function(result, status) {
 			if (status == google.maps.DirectionsStatus.OK) {
-
-		//alert("yes");
 				directionsDisplay.setDirections(result);
 			}else{
-			//	alert("NO");
 			}
 		});
 	}
