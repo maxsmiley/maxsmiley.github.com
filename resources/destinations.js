@@ -22,7 +22,6 @@ $(document).ready(function(){
 	var map;
 
 	function initialize() {
-		alert("test");
 		console.log("initing...");
 		directionsDisplay = new google.maps.DirectionsRenderer();
 		var chicago = new google.maps.LatLng(41.850033, -87.6500523);
@@ -55,5 +54,5 @@ $(document).ready(function(){
 
 	//call the methods here
 	initialize();
-	calcRoute();
+	//calcRoute();
 });
