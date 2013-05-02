@@ -52,25 +52,33 @@ $(document).ready(function(){
 			}
 		});
 		*/
-		var trip = $.get("https://straight-trippin.herokuapp.com/get_trip?name=Roadtrip");
-		console.log(trip);
-		var dests = trip["destinations"];
-		var origin = dests.first();
-		var destination = dests.last();
-		dests = dest.splice(1, dest.length -1);
-		var waypoints;
-		var request;
-		request["origin"] = origin;
-		for(var i = 0; i < dest.length; i ++){
-			waypoints[i]["location"]= dests[i];
-			waypoints[i]["stopover"]= true;
+		var trip;
+		var response = $.get("https://straight-trippin.herokuapp.com/get_trip?name=Roadtrip");
+		if(response.status == 200 || response.readyState = 4){
+			trip = response.responseText;
+			console.log(trip);
+			var dests = trip["destinations"];
+			var origin = dests.first();
+			var destination = dests.last();
+			dests = dest.splice(1, dest.length -1);
+			var waypoints;
+			var request;
+			request["origin"] = origin;
+			for(var i = 0; i < dest.length; i ++){
+				waypoints[i]["location"]= dests[i];
+				waypoints[i]["stopover"]= true;
+			}
+			request["waypoints"] = waypoints;
+			request["destination"] = destination;
+			request["tevelMode"] = google.maps.DirectionsTravelMode.DRIVING;
+				directionsService.route(request, function(result, status) {
+				if (status == google.maps.DirectionsStatus.OK) {
+					directionsDisplay.setDirections(result);
+				}else{
+				}
+			});
 		}
-		request["waypoints"] = waypoints;
-		request["destination"] = destination;
-		request["tevelMode"] = google.maps.DirectionsTravelMode.DRIVING;
-		//request = JSON.stringify(request);
-		alert("lel");
-		alert(""+request);
+		
 		/*request = 
 		{
        	origin: origin
@@ -100,12 +108,7 @@ $(document).ready(function(){
 		  travelMode: TravelMode.DRIVING,
 		  unitSystem: UnitSystem.IMPERIAL
 		};*/
-		directionsService.route(request, function(result, status) {
-			if (status == google.maps.DirectionsStatus.OK) {
-				directionsDisplay.setDirections(result);
-			}else{
-			}
-		});
+		
 
 	}
 
