@@ -53,12 +53,12 @@ $(document).ready(function(){
 		});
 		*/
 		var trip;
-		var direction_req ="https://straight-trippin.herokuapp.com/get_trip?name=Roadtrip";
+		var direction_req = "https://straight-trippin.herokuapp.com/get_trip?name=Roadtrip";
 		$.get(direction_req, function(data, status){
 			if(status == 400){
 				trip = data;
 				console.log(trip);
-				var dests = trip["destinations"];
+				/*var dests = trip["destinations"];
 				var origin = dests.first();
 				var destination = dests.last();
 				dests = dest.splice(1, dest.length -1);
@@ -75,9 +75,8 @@ $(document).ready(function(){
 					directionsService.route(request, function(result, status) {
 					if (status == google.maps.DirectionsStatus.OK) {
 						directionsDisplay.setDirections(result);
-					}else{
-					}
-				});
+					}*/
+				//});
 			}
 		});
 			/*request = 
@@ -110,7 +109,7 @@ $(document).ready(function(){
 		  unitSystem: UnitSystem.IMPERIAL
 		};*/
 		
-		}
+	}
 		
 		
 
