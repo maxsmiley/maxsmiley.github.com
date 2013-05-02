@@ -32,7 +32,7 @@ $(document).ready(function(){
 		}
 		map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
 		directionsDisplay.setMap(map);
-        directionsDisplay.setPanel(document.getElementById('map_canvas'));
+        directionsDisplay.setPanel(document.getElementById('panel'));
 		var d = document.getElementById("map_canvas")
 		var newdiv = document.createElement('div');
 
@@ -52,12 +52,13 @@ $(document).ready(function(){
 			}
 		});
 		*/
-		var trip_request = $.getJSON( "https://straight-trippin.herokuapp.com/get_trip?name=Roadtrip", function() {
-		  console.log( "success" );
-		})
-		.done(function(data) { console.log( data ); })
-		.fail(function() { console.log( "error" ); })
-		.always(function() { console.log( "complete" ); });
+		//var trip_request = $.getJSON( "https://straight-trippin.herokuapp.com/get_trip?name=Roadtrip", function() {
+		//  console.log( "success" );
+		//})
+		//.done(function(data) { console.log( data ); })
+		//.fail(function() { console.log( "error" ); })
+		//.always(function() { console.log( "complete" ); });
+		
 		/*var trip;
 		console.log("requesting..");
 		var direction_req = "https://straight-trippin.herokuapp.com/get_trip?name=Roadtrip";
@@ -88,20 +89,25 @@ $(document).ready(function(){
 		});
 */
 		console.log("done.");
-			/*request = 
+		var request = 
 		{
-       	origin: origin
-        waypoints: [
-		    {
-		      location:"Joplin, MO",
-		      stopover:true
-		    },{
-		      location:"Oklahoma City, OK",
-		      stopover:true
-		    }],
-       destination: 'New York',
-       travelMode: google.maps.DirectionsTravelMode.DRIVING
-     };*/
+	       	origin: origin
+	        waypoints: [
+			    {
+			      location:"Joplin, MO",
+			      stopover:true
+			    },{
+			      location:"Oklahoma City, OK",
+			      stopover:true
+			    }],
+	       destination: 'New York',
+	       travelMode: google.maps.DirectionsTravelMode.DRIVING
+     	};
+     		directionsService.route(request, function(result, status) {
+					if (status == google.maps.DirectionsStatus.OK) {
+						directionsDisplay.setDirections(result);
+					}
+			});
 		/*{
 		  origin: "Chicago, IL",
 		  destination: "Los Angeles, CA",
