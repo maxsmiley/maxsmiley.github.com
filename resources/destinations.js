@@ -41,7 +41,6 @@ $(document).ready(function(){
 		  d.appendChild(newdiv);
 	}
 	function calcRoute() {
-		var request;
 		
 		//this is having some trouble (some same origin stuff...I bet it will work when)
 		//it's hosted on a web server. It's the right general idea, though
@@ -70,7 +69,7 @@ $(document).ready(function(){
 		request["waypoints"] = waypoints;
 		request["destination"] = destination;
 		request["tevelMode"] = google.maps.DirectionsTravelMode.DRIVING;
-		request = JSON.stringify(request);
+		//request = JSON.stringify(request);
 		alert("lel");
 		alert(""+request);
 		/*request = 
