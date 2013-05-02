@@ -53,6 +53,7 @@ $(document).ready(function(){
 		});
 		*/
 		var trip;
+		console.log("requesting..");
 		var direction_req = "https://straight-trippin.herokuapp.com/get_trip?name=Roadtrip";
 		$.get(direction_req, function(data, status){
 			if(status == 400){
