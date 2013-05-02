@@ -78,12 +78,9 @@ $(document).ready(function(){
 					}else{
 					}
 				});
-				}
+			}
 		});
-			
-		}
-		
-		/*request = 
+			/*request = 
 		{
        	origin: origin
         waypoints: [
@@ -113,8 +110,9 @@ $(document).ready(function(){
 		  unitSystem: UnitSystem.IMPERIAL
 		};*/
 		
-
-	}
+		}
+		
+		
 
 	//call the methods here
 	initialize();
