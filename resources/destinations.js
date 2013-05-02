@@ -32,6 +32,7 @@ $(document).ready(function(){
 		}
 		map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
 		directionsDisplay.setMap(map);
+        directionsDisplay.setPanel(document.getElementById('map_canvas'));
 		var d = document.getElementById("map_canvas")
 		var newdiv = document.createElement('div');
 
@@ -54,6 +55,11 @@ $(document).ready(function(){
 		*/
 		request = 
 		{
+       origin: 'Chicago', 
+       destination: 'New York',
+       travelMode: google.maps.DirectionsTravelMode.DRIVING
+     };
+		/*{
 		  origin: "Chicago, IL",
 		  destination: "Los Angeles, CA",
 		  waypoints: [
@@ -67,14 +73,14 @@ $(document).ready(function(){
 		  provideRouteAlternatives: false,
 		  travelMode: TravelMode.DRIVING,
 		  unitSystem: UnitSystem.IMPERIAL
-		};
+		};*/
 		directionsService.route(request, function(result, status) {
 			if (status == google.maps.DirectionsStatus.OK) {
 
-		alert("yes");
+		//alert("yes");
 				directionsDisplay.setDirections(result);
 			}else{
-				alert("NO");
+			//	alert("NO");
 			}
 		});
 	}
