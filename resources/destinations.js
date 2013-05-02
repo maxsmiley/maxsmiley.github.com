@@ -53,9 +53,26 @@ $(document).ready(function(){
 			}
 		});
 		*/
-		request = 
+		var trip = $.get("https://straight-trippin.herokuapp.com/get_trip?name=Roadtrip");
+		var dests = trip["destinations"];
+		var origin = dests.first();
+		var destination = dests.last();
+		dests = dest.splice(1, dest.length -1);
+		var waypoints;
+		var request;
+		request["origin"] = origin;
+		for(int i = 0; i < dest.length; i ++){
+			waypoints[i]["location"]= dests[i];
+			waypoints[i]["stopover"]= true;
+		}
+		request["waypoints"] = waypoints;
+		request["destination"] = destination;
+		request["tevelMode"] = google.maps.DirectionsTravelMode.DRIVING;
+		request = JSON.stringify(request);
+		alert(request);
+		/*request = 
 		{
-       origin: 'Chicago', 
+       	origin: origin
         waypoints: [
 		    {
 		      location:"Joplin, MO",
@@ -66,7 +83,7 @@ $(document).ready(function(){
 		    }],
        destination: 'New York',
        travelMode: google.maps.DirectionsTravelMode.DRIVING
-     };
+     };*/
 		/*{
 		  origin: "Chicago, IL",
 		  destination: "Los Angeles, CA",
@@ -88,6 +105,7 @@ $(document).ready(function(){
 			}else{
 			}
 		});
+
 	}
 
 	//call the methods here
