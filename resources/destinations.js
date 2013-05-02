@@ -91,7 +91,7 @@ $(document).ready(function(){
 		console.log("done.");
 		var request = 
 		{
-	       	origin: origin
+	       	origin: "Chicago, IL",
 	        waypoints: [
 			    {
 			      location:"Joplin, MO",
