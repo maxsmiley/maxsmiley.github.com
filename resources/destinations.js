@@ -40,17 +40,35 @@ $(document).ready(function(){
 		  d.appendChild(newdiv);
 	}
 	function calcRoute() {
+		alert("yes");
 		var request;
 		
 		//this is having some trouble (some same origin stuff...I bet it will work when)
 		//it's hosted on a web server. It's the right general idea, though
 		//check out the documentation of jquery get. it's pretty nice
-		var direction_req = "http://localhost:5000/get_directions?trip_name=another_trip_id_string"
+		/*var direction_req = "http://localhost:5000/get_directions?trip_name=another_trip_id_string"
 		$.get(direction_req, function(data, status){
 			if(status == 400){
 				request = data;
 			}
 		});
+		*/
+		var request = 
+		{
+		  origin: "Chicago, IL",
+		  destination: "Los Angeles, CA",
+		  waypoints: [
+		    {
+		      location:"Joplin, MO",
+		      stopover:false
+		    },{
+		      location:"Oklahoma City, OK",
+		      stopover:true
+		    }],
+		  provideRouteAlternatives: false,
+		  travelMode: TravelMode.DRIVING,
+		  unitSystem: UnitSystem.IMPERIAL
+		}
 		directionsService.route(request, function(result, status) {
 			if (status == google.maps.DirectionsStatus.OK) {
 				directionsDisplay.setDirections(result);
