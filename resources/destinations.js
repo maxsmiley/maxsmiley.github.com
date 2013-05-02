@@ -32,6 +32,12 @@ $(document).ready(function(){
 		}
 		map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
 		directionsDisplay.setMap(map);
+		var d = document.getElementById("map_canvas")
+		var newdiv = document.createElement('div');
+
+		  newdiv.innerHTML = 'loveTRAIIIIN';
+
+		  d.appendChild(newdiv);
 	}
 	function calcRoute() {
 		var request;
