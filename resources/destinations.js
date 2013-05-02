@@ -80,7 +80,7 @@ $(document).ready(function(){
 				//});
 			}
 		});
-		console.log("done.);
+		console.log("done.");
 			/*request = 
 		{
        	origin: origin
