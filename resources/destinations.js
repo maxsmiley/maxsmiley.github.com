@@ -40,7 +40,6 @@ $(document).ready(function(){
 		  d.appendChild(newdiv);
 	}
 	function calcRoute() {
-		alert("yes");
 		var request;
 		
 		//this is having some trouble (some same origin stuff...I bet it will work when)
@@ -53,7 +52,7 @@ $(document).ready(function(){
 			}
 		});
 		*/
-		var request = 
+		request = 
 		{
 		  origin: "Chicago, IL",
 		  destination: "Los Angeles, CA",
@@ -71,6 +70,8 @@ $(document).ready(function(){
 		}
 		directionsService.route(request, function(result, status) {
 			if (status == google.maps.DirectionsStatus.OK) {
+				
+		alert("yes");
 				directionsDisplay.setDirections(result);
 			}
 		});
