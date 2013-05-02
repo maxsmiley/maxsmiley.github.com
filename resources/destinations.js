@@ -60,5 +60,5 @@ $(document).ready(function(){
 
 	//call the methods here
 	initialize();
-	//calcRoute();
+	calcRoute();
 });
