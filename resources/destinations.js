@@ -59,7 +59,7 @@ $(document).ready(function(){
         waypoints: [
 		    {
 		      location:"Joplin, MO",
-		      stopover:false
+		      stopover:true
 		    },{
 		      location:"Oklahoma City, OK",
 		      stopover:true
