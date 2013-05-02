@@ -67,7 +67,7 @@ $(document).ready(function(){
 		  provideRouteAlternatives: false,
 		  travelMode: TravelMode.DRIVING,
 		  unitSystem: UnitSystem.IMPERIAL
-		}
+		};
 		directionsService.route(request, function(result, status) {
 			if (status == google.maps.DirectionsStatus.OK) {
 
