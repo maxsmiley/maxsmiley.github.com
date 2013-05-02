@@ -69,7 +69,8 @@ $(document).ready(function(){
 		request["destination"] = destination;
 		request["tevelMode"] = google.maps.DirectionsTravelMode.DRIVING;
 		request = JSON.stringify(request);
-		alert(request);
+		alert("lel");
+		alert(""+request);
 		/*request = 
 		{
        	origin: origin
