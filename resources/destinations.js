@@ -2,7 +2,6 @@
 	Purpose: play around with the google directions API and google maps api
 */
 
-alert("test");
 function alert_me(){
 	console.log("blah!");
 }
@@ -55,5 +54,4 @@ $(document).ready(function(){
 	//call the methods here
 	initialize();
 	calcRoute();
-	alert("test");
 });
