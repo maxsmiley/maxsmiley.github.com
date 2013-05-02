@@ -52,9 +52,8 @@ $(document).ready(function(){
 			}
 		});
 		*/
-		alert("lel");
 		var trip = $.get("https://straight-trippin.herokuapp.com/get_trip?name=Roadtrip");
-		alert("lel");
+		console.log(trip);
 		var dests = trip["destinations"];
 		var origin = dests.first();
 		var destination = dests.last();
