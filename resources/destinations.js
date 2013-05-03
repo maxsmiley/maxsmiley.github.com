@@ -96,7 +96,7 @@ function calcRoute() {
 				 var id = "dest" + i;
 				 topdiv.setAttribute("class", "dropdown");
 				 topdiv.innerHTML = "<a onclick='toggle(\""+ id + "\");' >" + dests[i]["destination"] + "</a>";
-				 console.log(topdiv);
+				 //console.log(topdiv);
 				 var dropdiv = document.createElement('div');
 				 dropdiv.setAttribute("id", id);
 				 dropdiv.setAttribute("style", "display: none");
@@ -110,7 +110,7 @@ function calcRoute() {
 					}
 				 }
 				 dropdiv.appendChild(droplist);
-				  console.log(dropdiv);
+				 // console.log(dropdiv);
 
 				 divs.insertBefore(topdiv, add);
 				 divs.insertBefore(dropdiv, add);
