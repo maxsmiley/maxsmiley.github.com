@@ -112,7 +112,6 @@ $(document).ready(function(){
 					  console.log(dropdiv);
 					 divs.appendChild(topdiv);
 					 divs.appendChild(dropdiv);
-					 //divs.append(dropdiv);
 				}
 				
 
