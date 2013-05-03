@@ -148,11 +148,11 @@ function deleteDest(num){
 	ele.removeChild(destsinationdivs[num]);
 	destsinationdivs.remove(num);*/
 
-	$.post("http://straight-trippin.herokuapp.com/delete_destination", {"name":"Broadtrip"}, 
+	/*$.post("http://straight-trippin.herokuapp.com/delete_destination", {"name":"Broadtrip"}, 
                {"{'destination': '" + destinationsArray[i].toString() + "'}"})
 	.done(function(data) { })
 	.fail(function() { console.log( "error" ); })
-	.always(function() { });
+	.always(function() { });*/
 
 }
 
