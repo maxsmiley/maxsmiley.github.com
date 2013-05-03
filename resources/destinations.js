@@ -73,6 +73,8 @@ $(document).ready(function(){
 			                   };
 				request["origin"] = origin;
 				for(var i = 0; i < dests.length; i ++){
+					waypoints[i] = {location: undefined, 
+					                stopover: undefined};
 					waypoints[i]["location"]= dests[i];
 					waypoints[i]["stopover"]= true;
 				}
