@@ -21,6 +21,11 @@ $(document).ready(function(){
 	var directionsService = new google.maps.DirectionsService();
 	var map;
 
+	function destinationsInits(){
+		initialize();
+		calcRoute();
+	}
+
 	function initialize() {
 		console.log("initing...");
 		directionsDisplay = new google.maps.DirectionsRenderer();
@@ -186,10 +191,5 @@ $(document).ready(function(){
 		};*/
 		
 	}
-		
-		
 
-	//call the methods here
-	initialize();
-	calcRoute();
 });
