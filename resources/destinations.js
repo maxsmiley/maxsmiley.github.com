@@ -92,11 +92,11 @@ $(document).ready(function(){
 				//Update Divs
 				var divs = document.getElementById("divs");
 				for (var i = 0; i < dests.length; i ++){
-					 var topdiv = document.createElement('div');
-					 var newdiv = document.createElement('div');
+					 var topdiv = document.createElement("div");
+					 //var newdiv = document.createElement('div');
 					 newdiv.setAttribute("class", "dropinfo");
 					 newdiv.setAttribute("id", "destx");
-					 newdiv.appendChild(document.createTextNode( dests[i]));
+					 newdiv.innerHTML = dests[i];
 					 //var dropdiv = document.createElement('div');
 					 divs.appendChild(newdiv);
 					 //divs.append(dropdiv);
