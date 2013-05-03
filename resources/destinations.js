@@ -155,7 +155,7 @@ function deleteDest(num){
 		calcRoute();
 	})
 	.fail(function() { console.log( "error" ); })
-	.always(function() { });
+	.always(function() { console.log( "tried to delete" );});
 	//  */
 
 }
