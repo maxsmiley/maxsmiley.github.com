@@ -151,6 +151,7 @@ function deleteDest(num){
      $.post("http://straight-trippin.herokuapp.com/delete_destination", {"name":"Broadtrip"}, 
                {'destination':  destinationsArray[num].toString() })
 	.done(function(data) { 
+		console.log("sucessful delete");
 		calcRoute();
 	})
 	.fail(function() { console.log( "error" ); })
