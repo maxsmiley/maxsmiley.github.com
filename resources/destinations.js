@@ -206,23 +206,29 @@ function addDest(){
 		var send = {"name":"Broadtrip", "destination": add};
 		console.log(send);
 		$.post("http://straight-trippin.herokuapp.com/add_destination", {"name":"Broadtrip", 
-               "destination": JSON.stringify(add)});
+               "destination": JSON.stringify(add)})
+		.done(function() {
+			//Clean up add form
+			document.getElementById("dest-form").value = '';
+			document.getElementById("arrival-form").value = '';
+			document.getElementById("departure-form").value = '';
+			document.getElementById("hotel-form").value = '';
+			toggle('add');
 
-		//Clean up add form
-		document.getElementById("dest-form").value = '';
-		document.getElementById("arrival-form").value = '';
-		document.getElementById("departure-form").value = '';
-		document.getElementById("hotel-form").value = '';
-		toggle('add');
+			//Refresh dests map
+			var divs = document.getElementById("dests"); 
+			for(var i = 0; i < destsinationdivs.length; i ++){
+				divs.removeChild(destsinationdivs[i]);
+			}
+			destsinationdivs = new Array();
+			
+			calcRoute();
+		 })
+		.fail(function() { console.log( "error" ); })
+		.always(function() { console.log( "send data successfully" ); });
 
-		//Refresh dests map
-		var divs = document.getElementById("dests"); 
-		for(var i = 0; i < destsinationdivs.length; i ++){
-			divs.removeChild(destsinationdivs[i]);
-		}
-		destsinationdivs = new Array();
+
 		
-		calcRoute();
 	}
 
 }
