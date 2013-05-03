@@ -149,16 +149,13 @@ function deleteDest(num){
 	destsinationdivs.remove(num);*/
 	console.log("DELETE");
     console.log( destinationsArray[num].toString());
-     $.post("http://straight-trippin.herokuapp.com/delete_destination", {"name":"Broadtrip"}, 
+    $.post("http://straight-trippin.herokuapp.com/delete_destination", {"name":"Broadtrip"}, 
                {'destination':  destinationsArray[num].toString() })
 	.done(function(data) { 
 		console.log("sucessful delete");
-		
 	})
 	.fail(function() { console.log( "error" ); })
-	.always(function() { console.log( "tried to delete" );});
-	//  */
-
+	.always(function() { console.log( "tried to delete" ); });
 }
 
 function addDest(){
