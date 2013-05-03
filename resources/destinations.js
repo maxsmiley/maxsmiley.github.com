@@ -90,7 +90,7 @@ $(document).ready(function(){
 				});
 
 				//Update Divs
-				var divs = document.getElementById("divs");
+				var divs = document.getElementById("dests");
 				for (var i = 0; i < dests.length; i ++){
 					 //var topdiv = document.createElement("div");
 					 var newdiv = document.createElement("div");
