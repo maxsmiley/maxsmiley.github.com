@@ -97,13 +97,21 @@ $(document).ready(function(){
 					 var id = "dest" + i;
 					 topdiv.setAttribute("class", "dropdown");
 					 topdiv.setAttribute("id", id);
-					 topdiv.innerHTML = "<a href='#' onclick='toggle(\""+ id + "\");') >" + dests[i] + "</a>";
+					 topdiv.innerHTML = "<a href='#' onclick='toggle(\""+ id + "\");') >" + dests[i]["destination"] + "</a>";
 					 console.log(topdiv);
 					 var dropdiv = document.createElement('div');
 					 dropdiv.setAttribute("id", id);
 					 dropdiv.setAttribute("style", "display: none");
-					 dropdiv.innerHTML = "WEWEWEWEWOEHWIUEWEIHWWEUHWEOWEHEOH";
+					 var droplist = document.createElement('ul');
+					 var fieldName;
+					 for (fieldName in dests[i])
+					 	var item = document.createElement('li');
+					 	item.innerHTML = fieldName + " : " + dests[i][fieldName];
+					 	droplist.appendChild(item);
+					 }
+					 dropdiv.appendChild(droplist);
 					 divs.appendChild(topdiv);
+					 divs.appendChild(dropdiv);
 					 //divs.append(dropdiv);
 				}
 				
