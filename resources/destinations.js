@@ -93,9 +93,12 @@ $(document).ready(function(){
 				var divs = document.getElementById("divs");
 				for (var i = 0; i < dests.length; i ++){
 					 var topdiv = document.createElement('div');
-					 var $newdiv = $('<div class="dropinfo" id="destx"> ' + dests[i] + '</div>');
+					 var newdiv = document.createElement('div');
+					 newdiv.setAttribute("class", "dropinfo");
+					 newdiv.setAttribute("id", "destx");
+					 newdiv.appendChild(document.createTextNode( dests[i]));
 					 //var dropdiv = document.createElement('div');
-					 divs.append(newdiv);
+					 divs.appendChild(newdiv);
 					 //divs.append(dropdiv);
 				}
 				
