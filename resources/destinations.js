@@ -200,10 +200,12 @@ function addDest(){
 	add["departure"] = document.getElementById("departure-form").value;
 	add["hotel"] = document.getElementById("hotel-form").value;
 
-	console.log("ewe " + add);
+	
 	if(add["destination"] != '' && add["destination"] != null){
 		console.log("okay to send");
-		$.post("http://straight-trippin.herokuapp.com/add_destination",{name:"Broadtrip", destination: add});
+		var send = {"name":"Broadtrip", "destination": add};
+		console.log(send);
+		$.post("http://straight-trippin.herokuapp.com/add_destination",send);
 
 		//Clean up add form
 		document.getElementById("dest-form").value = '';
