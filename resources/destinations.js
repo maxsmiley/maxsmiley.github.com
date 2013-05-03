@@ -93,7 +93,7 @@ $(document).ready(function(){
 				var divs = document.getElementById("divs");
 				for (var i = 0; i < dests.length; i ++){
 					 var topdiv = document.createElement('div');
-					 var $newdiv1 = $('<div class="dropinfo" id="destx"> ' + dests[i] + '</div>');
+					 var $newdiv = $('<div class="dropinfo" id="destx"> ' + dests[i] + '</div>');
 					 //var dropdiv = document.createElement('div');
 					 divs.append(newdiv);
 					 //divs.append(dropdiv);
