@@ -63,9 +63,8 @@ $(document).ready(function(){
 			if(trip != null){
 				//Update Google Map
 				var dests = trip["destinations"];
-				var origin = dests[0];
-				var destination = dests[dests.length - 1];
-				dests = dests.splice(1, dests.length -1);
+				var origin = dests[0]["destination"];
+				var destination = dests[dests.length - 1]["destination"];
 				var waypoints = new Array();
 				var request = {origin: undefined, 
 			                   waypoints: undefined,
@@ -76,9 +75,10 @@ $(document).ready(function(){
 				for(var i = 0; i < dests.length; i ++){
 					waypoints[i] = {location: undefined, 
 					                stopover: undefined};
-					waypoints[i]["location"]= dests[i];
+					waypoints[i]["location"]= dests[i]["destination"];
 					waypoints[i]["stopover"]= true;
 				}
+				waypoints = waypoints.splice(1, waypoints.length -1);
 				request["waypoints"] = waypoints;
 				request["destination"] = destination;
 				request["travelMode"] = google.maps.DirectionsTravelMode.DRIVING;
