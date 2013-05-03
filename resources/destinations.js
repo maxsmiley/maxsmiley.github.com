@@ -149,8 +149,8 @@ function deleteDest(num){
 	destsinationdivs.remove(num);*/
 	console.log("DELETE");
     console.log( destinationsArray[num].toString());
-    $.post("http://straight-trippin.herokuapp.com/delete_destination", {"name":"Broadtrip"}, 
-               {'destination':  destinationsArray[num].toString() })
+    $.post("http://straight-trippin.herokuapp.com/delete_destination", {"name":"Broadtrip", 
+               'destination':  destinationsArray[num].toString() })
 	.done(function(data) { 
 		console.log("sucessful delete");
 	})
