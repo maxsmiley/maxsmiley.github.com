@@ -55,12 +55,21 @@ $(document).ready(function(){
 		if(add["destination"] != '' && add["destination"] != null){
 			$.post("http://straight-trippin.herokuapp.com/add_destination", add);
 
+			//Clean up add form
 			document.getElementById("dest-form").value = '';
 			document.getElementById("arrival-form").value = '';
 			document.getElementById("departure-form").value = '';
 			document.getElementById("hotel-form").value = '';
 			toggle('add');
+
+			//Refresh dests map
+			var divs = document.getElementById("dests"); 
+			while (divs.hasChildNodes()) {
+	   			divs.removeChild(node.lastChild);
+			}
+			calcRoute();
 		}
+
 	}
 	function calcRoute() {
 		
