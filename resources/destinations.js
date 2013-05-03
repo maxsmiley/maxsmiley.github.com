@@ -53,7 +53,7 @@ $(document).ready(function(){
 		});
 		*/
 		var trip = null;
-		var trip_request = $.getJSON( "https://straight-trippin.herokuapp.com/get_trip?name=Roadtrip", function() {
+		var trip_request = $.getJSON( "https://straight-trippin.herokuapp.com/get_trip?name=Broadtrip", function() {
 		  console.log( "retreival success" );
 		})
 		.done(function(data) { 
