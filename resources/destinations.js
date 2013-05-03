@@ -5,7 +5,7 @@
 function alert_me(){
 	console.log("blah!");
 }
-
+var trip;
 $(document).ready(function(){
 	$('#dest_form').submit(function(event){
 		event.preventDefault();
@@ -13,7 +13,6 @@ $(document).ready(function(){
 		term = $form.find('#dest').val();
 		console.log(term);
 	});
-	
 	//I took most of this example from google. See:
 	//https://developers.google.com/maps/documentation/javascript/directions
 	//for more complete reference
@@ -52,7 +51,7 @@ $(document).ready(function(){
 			}
 		});
 		*/
-		var trip = null;
+	    trip = null;
 		var trip_request = $.getJSON( "https://straight-trippin.herokuapp.com/get_trip?name=Roadtrip", function() {
 		  console.log( "retreival success" );
 		})
