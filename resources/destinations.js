@@ -148,12 +148,12 @@ function deleteDest(num){
 	ele.removeChild(destsinationdivs[num]);
 	destsinationdivs.remove(num);*/
 	console.log("DELETE");
-
+    console.log( destinationsArray[num].toString());
      $.post("http://straight-trippin.herokuapp.com/delete_destination", {"name":"Broadtrip"}, 
                {'destination':  destinationsArray[num].toString() })
 	.done(function(data) { 
 		console.log("sucessful delete");
-		calcRoute();
+		
 	})
 	.fail(function() { console.log( "error" ); })
 	.always(function() { console.log( "tried to delete" );});
