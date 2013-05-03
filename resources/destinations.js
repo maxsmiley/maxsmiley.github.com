@@ -56,34 +56,37 @@ $(document).ready(function(){
 		var trip_request = $.getJSON( "https://straight-trippin.herokuapp.com/get_trip?name=Roadtrip", function() {
 		  console.log( "retreival success" );
 		})
-		.done(function(data) { console.log("OBJTECT"); console.log( data ); trip = data;})
+		.done(function(data) { 
+			console.log( data ); 
+			trip = data;
+			if(trip != null){
+				var dests = trip["destinations"];
+				var origin = dests.first();
+				var destination = dests.last();
+				dests = dest.splice(1, dest.length -1);
+				var waypoints;
+				var request;
+				request["origin"] = origin;
+				for(var i = 0; i < dest.length; i ++){
+					waypoints[i]["location"]= dests[i];
+					waypoints[i]["stopover"]= true;
+				}
+				request["waypoints"] = waypoints;
+				request["destination"] = destination;
+				request["tevelMode"] = google.maps.DirectionsTravelMode.DRIVING;
+				directionsService.route(request, function(result, status) {
+				if (status == google.maps.DirectionsStatus.OK) {
+					directionsDisplay.setDirections(result);
+					}
+				});
+			}else{
+				console.log("FAILURE");
+			}
+		})
 		.fail(function() { console.log( "error" ); })
 		.always(function() { console.log( "complete" ); });
 		
-		if(trip != null){
-			alert("YES YES YES");
-			var dests = trip["destinations"];
-			var origin = dests.first();
-			var destination = dests.last();
-			dests = dest.splice(1, dest.length -1);
-			var waypoints;
-			var request;
-			request["origin"] = origin;
-			for(var i = 0; i < dest.length; i ++){
-				waypoints[i]["location"]= dests[i];
-				waypoints[i]["stopover"]= true;
-			}
-			request["waypoints"] = waypoints;
-			request["destination"] = destination;
-			request["tevelMode"] = google.maps.DirectionsTravelMode.DRIVING;
-			directionsService.route(request, function(result, status) {
-			if (status == google.maps.DirectionsStatus.OK) {
-				directionsDisplay.setDirections(result);
-				}
-			});
-		}else{
-			console.log("FAILURE");
-		}
+
 		
 		/*var trip;
 		console.log("requesting..");
