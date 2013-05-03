@@ -110,6 +110,7 @@ $(document).ready(function(){
 					 	droplist.appendChild(item);
 					 }
 					 dropdiv.appendChild(droplist);
+					  console.log(dropdiv);
 					 divs.appendChild(topdiv);
 					 divs.appendChild(dropdiv);
 					 //divs.append(dropdiv);
