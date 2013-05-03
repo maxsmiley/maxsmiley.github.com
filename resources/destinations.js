@@ -96,11 +96,11 @@ $(document).ready(function(){
 					 var topdiv = document.createElement("div");
 					 var id = "dest" + i;
 					 topdiv.setAttribute("class", "dropdown");
-					 topdiv.innerHTML = "<a  >" + dests[i]["destination"] + "</a>";
+					 topdiv.innerHTML = "<a onclick='toggle(\""+ id + "\");' >" + dests[i]["destination"] + "</a>";
 					 console.log(topdiv);
 					 var dropdiv = document.createElement('div');
 					 dropdiv.setAttribute("id", id);
-					 dropdiv.setAttribute("style");
+					 dropdiv.setAttribute("style", "none");
 					 var droplist = document.createElement('ul');
 					 var fieldName;
 					 for (fieldName in dests[i]){
