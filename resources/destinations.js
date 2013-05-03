@@ -153,6 +153,7 @@ function deleteDest(num){
                'destination':  destinationsArray[num].toString() })
 	.done(function(data) { 
 		console.log("sucessful delete");
+		calcRoute();
 	})
 	.fail(function() { console.log( "error" ); })
 	.always(function() { console.log( "tried to delete" ); });
