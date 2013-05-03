@@ -11,6 +11,7 @@ function alert_me(){
 var directionsDisplay;
 var directionsService = new google.maps.DirectionsService();
 var map;
+var destsinationdivs = new Array();
 
 function destinationsInits(){
 	initialize();
@@ -111,6 +112,8 @@ function calcRoute() {
 
 				 divs.insertBefore(topdiv, add);
 				 divs.insertBefore(dropdiv, add);
+				 destsinationdivs.add(topdiv);
+				 destsinationdivs.add(dropdiv);
 			}
 			
 
@@ -196,10 +199,11 @@ function addDest(){
 	add["arrival"] = document.getElementById("arrival-form").value;
 	add["departure"] = document.getElementById("departure-form").value;
 	add["hotel"] = document.getElementById("hotel-form").value;
-			   	console.log("ewe " + add["destination"]);
+
+	console.log("ewe " + add);
 	if(add["destination"] != '' && add["destination"] != null){
 		console.log("okay to send");
-		$.post("http://straight-trippin.herokuapp.com/add_destination", add);
+		$.post("http://straight-trippin.herokuapp.com/add_destination",{name:"Broadtrip", destination: add});
 
 		//Clean up add form
 		document.getElementById("dest-form").value = '';
@@ -210,6 +214,11 @@ function addDest(){
 
 		//Refresh dests map
 		var divs = document.getElementById("dests"); 
+		for(var i = 0; i < destsinationdivs.length; i ++){
+			divs.removeChild(destsinationdivs[i]);
+		}
+		destsinationdivs = new Array();
+		
 		calcRoute();
 	}
 
