@@ -112,8 +112,8 @@ function calcRoute() {
 
 				 divs.insertBefore(topdiv, add);
 				 divs.insertBefore(dropdiv, add);
-				 destsinationdivs.add(topdiv);
-				 destsinationdivs.add(dropdiv);
+				 destsinationdivs.push(topdiv);
+				 destsinationdivs.push(dropdiv);
 			}
 			
 
