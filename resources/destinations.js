@@ -52,12 +52,12 @@ $(document).ready(function(){
 			}
 		});
 		*/
-		//var trip_request = $.getJSON( "https://straight-trippin.herokuapp.com/get_trip?name=Roadtrip", function() {
-		//  console.log( "success" );
-		//})
-		//.done(function(data) { console.log( data ); })
-		//.fail(function() { console.log( "error" ); })
-		//.always(function() { console.log( "complete" ); });
+		var trip_request = $.getJSON( "https://straight-trippin.herokuapp.com/get_trip?name=Roadtrip", function() {
+		  console.log( "success" );
+		})
+		.done(function(data) { console.log( data ); alert("YES"); })
+		.fail(function() { console.log( "error" ); })
+		.always(function() { console.log( "complete" ); });
 		
 		/*var trip;
 		console.log("requesting..");
@@ -84,11 +84,11 @@ $(document).ready(function(){
 					if (status == google.maps.DirectionsStatus.OK) {
 						directionsDisplay.setDirections(result);
 					}
-				//});
+				});
 			}
-		});
-*/
-		console.log("done.");
+		});*/
+
+		/*console.log("done.");
 		var request = 
 		{
 	       	origin: "Chicago, IL",
@@ -102,7 +102,7 @@ $(document).ready(function(){
 			    }],
 	       destination: 'New York',
 	       travelMode: google.maps.DirectionsTravelMode.DRIVING
-     	};
+     	};*/
      		directionsService.route(request, function(result, status) {
 					if (status == google.maps.DirectionsStatus.OK) {
 						directionsDisplay.setDirections(result);
