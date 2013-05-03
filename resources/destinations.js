@@ -33,7 +33,7 @@ $(document).ready(function(){
 		map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
 		directionsDisplay.setMap(map);
         directionsDisplay.setPanel(document.getElementById('panel'));
-		var d = document.getElementById("map_canvas")
+		var d = document.getElementById("map_canvas");
 		var newdiv = document.createElement('div');
 
 		  newdiv.innerHTML = 'loveTRAIIIIN';
@@ -61,6 +61,7 @@ $(document).ready(function(){
 			trip = data;//[0];
 			console.log( trip);
 			if(trip != null){
+				//Update Google Map
 				var dests = trip["destinations"];
 				var origin = dests[0];
 				var destination = dests[dests.length - 1];
@@ -87,6 +88,18 @@ $(document).ready(function(){
 					directionsDisplay.setDirections(result);
 					}
 				});
+
+				//Update Divs
+				var divs = document.getElementById("divs");
+				for (var i = 0; i < dests.length; i ++){
+					 var topdiv = document.createElement('div');
+					 var $newdiv1 = $('<div class="dropinfo" id="destx"> ' + dests[i] + '</div>');
+					 //var dropdiv = document.createElement('div');
+					 divs.append(newdiv);
+					 //divs.append(dropdiv);
+				}
+				
+
 			}else{
 				console.log("FAILURE");
 			}
