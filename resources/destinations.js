@@ -52,11 +52,11 @@ $(document).ready(function(){
 			}
 		});
 		*/
+		var trip = null;
 		var trip_request = $.getJSON( "https://straight-trippin.herokuapp.com/get_trip?name=Roadtrip", function() {
 		  console.log( "success" );
 		})
-		var trip;
-		.done(function(data) { trip = data;})
+		.done(function(data) { console.log( data ); trip = data;})
 		.fail(function() { console.log( "error" ); })
 		.always(function() { console.log( "complete" ); });
 		
