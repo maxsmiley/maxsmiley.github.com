@@ -206,7 +206,7 @@ function addDest(){
 		var send = {"name":"Broadtrip", "destination": add};
 		console.log(send);
 		$.post("http://straight-trippin.herokuapp.com/add_destination", {"name":"Broadtrip", 
-               "destination":'{"destination":"Cincinatti, OH", "Arrival":"5:00"}'});
+               "destination": JSON.stringify(add)});
 
 		//Clean up add form
 		document.getElementById("dest-form").value = '';
