@@ -24,6 +24,7 @@ $(document).ready(function(){
 	function destinationsInits(){
 		initialize();
 		calcRoute();
+		
 	}
 
 	function initialize() {
