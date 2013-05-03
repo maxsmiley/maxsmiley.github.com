@@ -71,7 +71,7 @@ $(document).ready(function(){
 			                   travelMode: undefined
 			                   };
 				request["origin"] = origin;
-				for(var i = 0; i < dest.length; i ++){
+				for(var i = 0; i < dests.length; i ++){
 					waypoints[i]["location"]= dests[i];
 					waypoints[i]["stopover"]= true;
 				}
