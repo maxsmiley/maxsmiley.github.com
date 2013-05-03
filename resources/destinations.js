@@ -122,7 +122,7 @@ $(document).ready(function(){
 
 				//Update Divs
 				var divs = document.getElementById("dests");
-				var add = document.getElementById("add")
+				var add = document.getElementById("addtop")
 				for (var i = 0; i < dests.length; i ++){
 					 //var topdiv = document.createElement("div");
 					 var topdiv = document.createElement("div");
@@ -142,6 +142,7 @@ $(document).ready(function(){
 					 }
 					 dropdiv.appendChild(droplist);
 					  console.log(dropdiv);
+
 					 divs.insertBefore(topdiv, add);
 					 divs.insertBefore(dropdiv, add);
 				}
