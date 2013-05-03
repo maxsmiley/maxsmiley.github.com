@@ -60,7 +60,7 @@ $(document).ready(function(){
 		.fail(function() { console.log( "error" ); })
 		.always(function() { console.log( "complete" ); });
 		
-		if(trip.length > 0){
+		if(trip != null){
 			alert("YES YES YES");
 			var dests = trip["destinations"];
 			var origin = dests.first();
@@ -81,6 +81,8 @@ $(document).ready(function(){
 				directionsDisplay.setDirections(result);
 				}
 			});
+		}else{
+			console.log("FAILURE");
 		}
 		
 		/*var trip;
