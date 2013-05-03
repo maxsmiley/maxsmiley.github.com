@@ -1,6 +1,11 @@
 /*	Test Directions
 	Purpose: play around with the google directions API and google maps api
 */
+Array.prototype.remove = function(from, to) {
+  var rest = this.slice((to || from) + 1 || this.length);
+  this.length = from < 0 ? this.length + from : from;
+  return this.push.apply(this, rest);
+};
 
 function alert_me(){
 	console.log("blah!");
@@ -12,6 +17,7 @@ var directionsDisplay;
 var directionsService = new google.maps.DirectionsService();
 var map;
 var destsinationdivs = new Array();
+var destinationsArray = new Array();
 
 function destinationsInits(){
 	initialize();
@@ -114,11 +120,17 @@ function calcRoute() {
 				 dropdiv.appendChild(droplist);
 
 				 var deleteButton = document.createElement('input');
+				 deleteButton.setAttribute("id", "delete"+i);
+				 deleteButton.setAttribute("type", "submit");
+				 deleteButton.setAttribute("value", "Delete");
+				 deleteButton.setAttribute("onclick", "deleteDest(" + i + ")");
+				 droplist.appendChild(deleteButton);
 
 				 divs.insertBefore(topdiv, add);
 				 divs.insertBefore(dropdiv, add);
 				 destsinationdivs.push(topdiv);
 				 destsinationdivs.push(dropdiv);
+				 destinationsArray.push(dests[i]["destination"]);
 			}
 			
 
@@ -129,69 +141,19 @@ function calcRoute() {
 	.fail(function() { console.log( "error" ); })
 	.always(function() { console.log( "complete" ); });
 	
+}
 
-	
-	/*var trip;
-	console.log("requesting..");
-	var direction_req = "https://straight-trippin.herokuapp.com/get_trip?name=Roadtrip";
-	$.get(direction_req, function(data, status){
-		if(status == 200 || status == ){
-			trip = data;
-			console.log(trip);
-			var dests = trip["destinations"];
-			var origin = dests.first();
-			var destination = dests.last();
-			dests = dest.splice(1, dest.length -1);
-			var waypoints;
-			var request;
-			request["origin"] = origin;
-			for(var i = 0; i < dest.length; i ++){
-				waypoints[i]["location"]= dests[i];
-				waypoints[i]["stopover"]= true;
-			}
-			request["waypoints"] = waypoints;
-			request["destination"] = destination;
-			request["tevelMode"] = google.maps.DirectionsTravelMode.DRIVING;
-				directionsService.route(request, function(result, status) {
-				if (status == google.maps.DirectionsStatus.OK) {
-					directionsDisplay.setDirections(result);
-				}
-			});
-		}
-	});*/
+function deleteDest(num){
+	/*var ele = document.getElementById("divs");
+	ele.removeChild(destsinationdivs[num]);
+	destsinationdivs.remove(num);*/
 
-	/*console.log("done.");
-	var request = 
-	{
-       	origin: "Chicago, IL",
-        waypoints: [
-		    {
-		      location:"Joplin, MO",
-		      stopover:true
-		    },{
-		      location:"Oklahoma City, OK",
-		      stopover:true
-		    }],
-       destination: 'New York',
-       travelMode: google.maps.DirectionsTravelMode.DRIVING
- 	};*/
+	$.post("http://straight-trippin.herokuapp.com/delete_destination", {"name":"Broadtrip"}, 
+               {"{'destination': '" + destinationsArray[i] + "'}"})
+	.done(function(data) { })
+	.fail(function() { console.log( "error" ); })
+	.always(function() { });
 
-	/*{
-	  origin: "Chicago, IL",
-	  destination: "Los Angeles, CA",
-	  waypoints: [
-	    {
-	      location:"Joplin, MO",
-	      stopover:false
-	    },{
-	      location:"Oklahoma City, OK",
-	      stopover:true
-	    }],
-	  provideRouteAlternatives: false,
-	  travelMode: TravelMode.DRIVING,
-	  unitSystem: UnitSystem.IMPERIAL
-	};*/
-	
 }
 
 function addDest(){
@@ -226,7 +188,7 @@ function addDest(){
 				divs.removeChild(destsinationdivs[i]);
 			}
 			destsinationdivs = new Array();
-			
+			destinationsArray = new Array();
 			calcRoute();
 		 })
 		.fail(function() { console.log( "error" ); })
