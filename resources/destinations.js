@@ -81,6 +81,7 @@ $(document).ready(function(){
 				request["waypoints"] = waypoints;
 				request["destination"] = destination;
 				request["travelMode"] = google.maps.DirectionsTravelMode.DRIVING;
+				console.log (request);
 				directionsService.route(request, function(result, status) {
 				if (status == google.maps.DirectionsStatus.OK) {
 					directionsDisplay.setDirections(result);
