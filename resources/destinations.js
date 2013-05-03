@@ -191,11 +191,11 @@ function addDest(){
 	var add = {destination: document.getElementById("dest-form").value,
 			   arrival: document.getElementById("arrival-form").value,
 			   departure: document.getElementById("departure-form").value,
-			   destination: document.getElementById("hotel-form").value};
-	add["destination"] = document.getElementById("dest-form").value;
-	add["arrival"] = document.getElementById("arrival-form").value;
-	add["departure"] = document.getElementById("departure-form").value;
-	add["destination"] = document.getElementById("hotel-form").value;
+			   hotel: document.getElementById("hotel-form").value};
+	//add["destination"] = document.getElementById("dest-form").value;
+	//add["arrival"] = document.getElementById("arrival-form").value;
+	//add["departure"] = document.getElementById("departure-form").value;
+	//add["hotel"] = document.getElementById("hotel-form").value;
 			   	console.log("ewe " + add["destination"]);
 	if(add["destination"] != '' && add["destination"] != null){
 		console.log("okay to send");
