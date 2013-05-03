@@ -22,9 +22,9 @@ $(document).ready(function(){
 	var map;
 
 	function destinationsInits(){
+		alert("test");
 		initialize();
 		calcRoute();
-
 	}
 
 	function initialize() {
