@@ -96,7 +96,6 @@ $(document).ready(function(){
 					 var topdiv = document.createElement("div");
 					 var id = "dest" + i;
 					 topdiv.setAttribute("class", "dropdown");
-					 topdiv.setAttribute("id", id);
 					 topdiv.innerHTML = "<a href='#' onclick='toggle(\""+ id + "\");') >" + dests[i]["destination"] + "</a>";
 					 console.log(topdiv);
 					 var dropdiv = document.createElement('div');
