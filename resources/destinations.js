@@ -90,6 +90,7 @@ function calcRoute() {
 			//Update Divs
 			var divs = document.getElementById("dests");
 			var add = document.getElementById("addtop")
+			//For each destination, add a div
 			for (var i = 0; i < dests.length; i ++){
 				 //var topdiv = document.createElement("div");
 				 var topdiv = document.createElement("div");
@@ -100,6 +101,7 @@ function calcRoute() {
 				 var dropdiv = document.createElement('div');
 				 dropdiv.setAttribute("id", id);
 				 dropdiv.setAttribute("style", "display: none");
+
 				 var droplist = document.createElement('ul');
 				 var fieldName;
 				 for (fieldName in dests[i]){
@@ -110,7 +112,8 @@ function calcRoute() {
 					}
 				 }
 				 dropdiv.appendChild(droplist);
-				 // console.log(dropdiv);
+
+				 var deleteButton = document.createElement('input');
 
 				 divs.insertBefore(topdiv, add);
 				 divs.insertBefore(dropdiv, add);
