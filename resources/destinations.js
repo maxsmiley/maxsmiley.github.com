@@ -205,8 +205,8 @@ function addDest(){
 		console.log("okay to send");
 		var send = {"name":"Broadtrip", "destination": add};
 		console.log(send);
-		$.post("http://straight-trippin.herokuapp.com/add_destination",{'name':'Broadtrip', 
-			'destination:': "{destination:':'Detroit, MI', 'Hotel':'Marriot'}"});
+		$.post("http://straight-trippin.herokuapp.com/add_destination",{'name':'Broadtrip'}, 
+			{'destination:': "{destination:':'Cincinatti, OH', 'Hotel':'Nicington Palace'}"});
 
 		//Clean up add form
 		document.getElementById("dest-form").value = '';
