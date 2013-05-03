@@ -103,9 +103,11 @@ function calcRoute() {
 				 var droplist = document.createElement('ul');
 				 var fieldName;
 				 for (fieldName in dests[i]){
-				 	var item = document.createElement('li');
-				 	item.innerHTML = fieldName + " : " + dests[i][fieldName];
-				 	droplist.appendChild(item);
+				 	if(dest[i][fieldName] != '' && dest[i][fieldName] != null){
+					 	var item = document.createElement('li');
+					 	item.innerHTML = fieldName + " : " + dests[i][fieldName];
+					 	droplist.appendChild(item);
+					}
 				 }
 				 dropdiv.appendChild(droplist);
 				  console.log(dropdiv);
