@@ -63,7 +63,7 @@ $(document).ready(function(){
 			if(trip != null){
 				var dests = trip["destinations"];
 				var origin = dests[0];
-				var destination = dests[trip.length -1];
+				var destination = dests[trip.length - 2];
 				dests = dests.splice(1, dests.length -1);
 				var waypoints = new Array();
 				var request = {origin: undefined, 
