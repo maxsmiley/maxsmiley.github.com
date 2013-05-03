@@ -93,13 +93,13 @@ $(document).ready(function(){
 				var divs = document.getElementById("dests");
 				for (var i = 0; i < dests.length; i ++){
 					 //var topdiv = document.createElement("div");
-					 var newdiv = document.createElement("div");
-					 newdiv.setAttribute("class", "dropdown");
-					 newdiv.setAttribute("id", "destx");
-					 newdiv.innerHTML = dests[i];
-					 console.log(newdiv);
-					 //var dropdiv = document.createElement('div');
-					 divs.appendChild(newdiv);
+					 var topdiv = document.createElement("div");
+					 topdiv.setAttribute("class", "dropdown");
+					 topdiv.setAttribute("id", "destx");
+					 topdiv.innerHTML = "<a href='#' onclick='toggle(\"destx\");') >" + dests[i] + "</a>";
+					 console.log(topdiv);
+					 var dropdiv = document.createElement('div');
+					 divs.appendChild(topdiv);
 					 //divs.append(dropdiv);
 				}
 				
