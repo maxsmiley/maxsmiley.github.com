@@ -94,7 +94,7 @@ $(document).ready(function(){
 				for (var i = 0; i < dests.length; i ++){
 					 //var topdiv = document.createElement("div");
 					 var newdiv = document.createElement("div");
-					 newdiv.setAttribute("class", "dropinfo");
+					 newdiv.setAttribute("class", "dropdown");
 					 newdiv.setAttribute("id", "destx");
 					 newdiv.innerHTML = dests[i];
 					 console.log(newdiv);
