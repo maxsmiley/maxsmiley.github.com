@@ -187,11 +187,13 @@ function calcRoute() {
 }
 
 function addDest(){
+	console.log("adding dest");
 	var add = {destination: document.getElementById("dest-form").value,
 			   arrival: document.getElementById("arrival-form").value,
 			   departure: document.getElementById("departure-form").value,
 			   destination: document.getElementById("hotel-form").value};
 	if(add["destination"] != '' && add["destination"] != null){
+		console.log("okay to send");
 		$.post("http://straight-trippin.herokuapp.com/add_destination", add);
 
 		//Clean up add form
