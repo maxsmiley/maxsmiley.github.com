@@ -187,7 +187,7 @@ function calcRoute() {
 }
 
 function addDest(){
-	console.log("adding dest");
+	console.log("adding dest " + document.getElementById("dest-form").value);
 	var add = {destination: document.getElementById("dest-form").value,
 			   arrival: document.getElementById("arrival-form").value,
 			   departure: document.getElementById("departure-form").value,
