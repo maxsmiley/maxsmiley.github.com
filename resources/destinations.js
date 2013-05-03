@@ -57,7 +57,7 @@ $(document).ready(function(){
 		  console.log( "retreival success" );
 		})
 		.done(function(data) { 
-			console.log( data ); 
+			//console.log( data ); 
 			trip = data;
 			console.log( trip);
 			if(trip != null){
