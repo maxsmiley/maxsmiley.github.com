@@ -149,7 +149,7 @@ function deleteDest(num){
 	destsinationdivs.remove(num);*/
 
 	$.post("http://straight-trippin.herokuapp.com/delete_destination", {"name":"Broadtrip"}, 
-               {"{'destination': '" + destinationsArray[i] + "'}"})
+               {"{'destination': '" + destinationsArray[i].toString() + "'}"})
 	.done(function(data) { })
 	.fail(function() { console.log( "error" ); })
 	.always(function() { });
