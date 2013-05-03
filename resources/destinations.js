@@ -58,14 +58,14 @@ $(document).ready(function(){
 		})
 		.done(function(data) { 
 			//console.log( data ); 
-			trip = data;
+			trip = data;//[0];
 			console.log( trip);
 			if(trip != null){
 				var dests = trip["destinations"];
 				var origin = dests[0];
 				var destination = dests[trip.length -1];
 				dests = dests.splice(1, dests.length -1);
-				var waypoints;
+				var waypoints = trip["waypoints"];
 				var request = {origin: undefined, 
 			                   waypoints: undefined,
 			                   destination: undefined,
