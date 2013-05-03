@@ -203,9 +203,6 @@ function addDest(){
 
 		//Refresh dests map
 		var divs = document.getElementById("dests"); 
-		while (divs.hasChildNodes()) {
-   			divs.removeChild(divs.lastChild);
-		}
 		calcRoute();
 	}
 
