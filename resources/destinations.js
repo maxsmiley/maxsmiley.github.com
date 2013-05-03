@@ -54,9 +54,9 @@ $(document).ready(function(){
 		*/
 		var trip = null;
 		var trip_request = $.getJSON( "https://straight-trippin.herokuapp.com/get_trip?name=Roadtrip", function() {
-		  console.log( "success" );
+		  console.log( "retreival success" );
 		})
-		.done(function(data) { console.log( data ); trip = data;})
+		.done(function(data) { console.log("OBJTECT"); console.log( data ); trip = data;})
 		.fail(function() { console.log( "error" ); })
 		.always(function() { console.log( "complete" ); });
 		
