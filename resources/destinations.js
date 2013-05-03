@@ -60,7 +60,7 @@ $(document).ready(function(){
 		.fail(function() { console.log( "error" ); })
 		.always(function() { console.log( "complete" ); });
 		
-		if(trip != null){
+		if(trip.length > 0){
 			alert("YES YES YES");
 			var dests = trip["destinations"];
 			var origin = dests.first();
