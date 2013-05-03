@@ -153,6 +153,13 @@ function deleteDest(num){
                'destination':  destinationsArray[num].toString() })
 	.done(function(data) { 
 		console.log("sucessful delete");
+			//Refresh dests map
+			var divs = document.getElementById("dests"); 
+			for(var i = 0; i < destsinationdivs.length; i ++){
+				divs.removeChild(destsinationdivs[i]);
+			}
+			destsinationdivs = new Array();
+			destinationsArray = new Array();
 		calcRoute();
 	})
 	.fail(function() { console.log( "error" ); })
