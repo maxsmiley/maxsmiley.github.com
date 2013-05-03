@@ -101,7 +101,7 @@ $(document).ready(function(){
 					 console.log(topdiv);
 					 var dropdiv = document.createElement('div');
 					 dropdiv.setAttribute("id", id);
-					 dropdiv.setAttribute("style", "display: none");
+					 dropdiv.setAttribute("style");
 					 var droplist = document.createElement('ul');
 					 var fieldName;
 					 for (fieldName in dests[i]){
