@@ -24,7 +24,7 @@ $(document).ready(function(){
 	function destinationsInits(){
 		initialize();
 		calcRoute();
-		
+
 	}
 
 	function initialize() {
@@ -45,6 +45,22 @@ $(document).ready(function(){
 		  newdiv.innerHTML = 'loveTRAIIIIN';
 
 		  d.appendChild(newdiv);
+	}
+
+	function addDest(){
+		var add = {destination: document.getElementById("dest-form").value,
+				   arrival: document.getElementById("arrival-form").value,
+				   departure: document.getElementById("departure-form").value,
+				   destination: document.getElementById("hotel-form").value};
+		if(add["destination"] != '' && add["destination"] != null){
+			$.post("http://straight-trippin.herokuapp.com/add_destination", add);
+
+			document.getElementById("dest-form").value = '';
+			document.getElementById("arrival-form").value = '';
+			document.getElementById("departure-form").value = '';
+			document.getElementById("hotel-form").value = '';
+			toggle('add');
+		}
 	}
 	function calcRoute() {
 		
