@@ -65,7 +65,11 @@ $(document).ready(function(){
 				var destination = dests[trip.length -1];
 				dests = dests.splice(1, dests.length -1);
 				var waypoints;
-				var request;
+				var request = {origin: undefined, 
+			                   waypoints: undefined,
+			                   destination: undefined,
+			                   travelMode: undefined
+			                   };
 				request["origin"] = origin;
 				for(var i = 0; i < dest.length; i ++){
 					waypoints[i]["location"]= dests[i];
@@ -73,7 +77,7 @@ $(document).ready(function(){
 				}
 				request["waypoints"] = waypoints;
 				request["destination"] = destination;
-				request["tevelMode"] = google.maps.DirectionsTravelMode.DRIVING;
+				request["travelMode"] = google.maps.DirectionsTravelMode.DRIVING;
 				directionsService.route(request, function(result, status) {
 				if (status == google.maps.DirectionsStatus.OK) {
 					directionsDisplay.setDirections(result);
