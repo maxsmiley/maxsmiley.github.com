@@ -94,11 +94,15 @@ $(document).ready(function(){
 				for (var i = 0; i < dests.length; i ++){
 					 //var topdiv = document.createElement("div");
 					 var topdiv = document.createElement("div");
+					 var id = "dest" + i;
 					 topdiv.setAttribute("class", "dropdown");
-					 topdiv.setAttribute("id", "destx");
-					 topdiv.innerHTML = "<a href='#' onclick='toggle(\"destx\");') >" + dests[i] + "</a>";
+					 topdiv.setAttribute("id", id);
+					 topdiv.innerHTML = "<a href='#' onclick='toggle(\""+ id + "\");') >" + dests[i] + "</a>";
 					 console.log(topdiv);
 					 var dropdiv = document.createElement('div');
+					 dropdiv.setAttribute("id", id);
+					 dropdiv.setAttribute("style", "display: none");
+					 dropdiv.innerHTML = "WEWEWEWEWOEHWIUEWEIHWWEUHWEOWEHEOH";
 					 divs.appendChild(topdiv);
 					 //divs.append(dropdiv);
 				}
