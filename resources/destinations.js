@@ -192,6 +192,7 @@ function addDest(){
 			   arrival: document.getElementById("arrival-form").value,
 			   departure: document.getElementById("departure-form").value,
 			   destination: document.getElementById("hotel-form").value};
+			   	console.log(add["destination"]);
 	if(add["destination"] != '' && add["destination"] != null){
 		console.log("okay to send");
 		$.post("http://straight-trippin.herokuapp.com/add_destination", add);
