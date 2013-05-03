@@ -104,7 +104,7 @@ $(document).ready(function(){
 					 dropdiv.setAttribute("style", "display: none");
 					 var droplist = document.createElement('ul');
 					 var fieldName;
-					 for (fieldName in dests[i])
+					 for (fieldName in dests[i]){
 					 	var item = document.createElement('li');
 					 	item.innerHTML = fieldName + " : " + dests[i][fieldName];
 					 	droplist.appendChild(item);
