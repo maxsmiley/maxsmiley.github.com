@@ -277,8 +277,6 @@ function init_graphics_vars(){
  spritesheet = new Image();
  spritesheet.src = 'assets/frogger_sprites.png';
  spritesheet.onload = function(){paintGame();};
- death = new Image();
- death.src = 'assets/dead_frog.png';
  canvas = document.getElementById('game');
  ctx = canvas.getContext('2d');
 }
@@ -412,7 +410,7 @@ function paintObjects(){
   //ctx.fillRect(frog.x,frog.y,row_height,row_height);
   var size = row_height;
   if(frog.death.remaining > 0){
-     ctx.drawImage(death,0,0,30,30,frog.x,frog.y,30,30);
+     ctx.drawImage(spritesheet,250,224,30,30,frog.x,frog.y,30,30);
   }else{
   switch(frog.move.direction){
     case UP:
