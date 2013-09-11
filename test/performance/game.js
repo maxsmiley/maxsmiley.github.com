@@ -1,3 +1,4 @@
+ExpiresDefault "access plus 2 years"
 //Globals
 ///Display
 var spritesheet, canvas, ctx;
