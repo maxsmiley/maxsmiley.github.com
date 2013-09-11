@@ -152,6 +152,7 @@ function deleteDest(num){
     $.post("http://straight-trippin.herokuapp.com/delete_destination", {"name":"Broadtrip", 
                'destination':  destinationsArray[num].toString() })
 	.done(function(data) { 
+		//TODO: FUNCTION PACK
 		console.log("sucessful delete");
 			//Refresh dests map
 			var divs = document.getElementById("dests"); 
