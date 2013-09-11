@@ -21,7 +21,7 @@ var flyObj;
 var objects = new Array(); 
 var objectSpawnRate;
 var objectSpawnPoints = 
-  [{"y":road_edge-row_height, remaining: 50, speed:.9, type: 1, direction: -1, width: 30, 
+  [{y:road_edge-row_height, remaining: 50, speed:.9, type: 1, direction: -1, width: 30, 
     px: 81, py: 263, ph: 30},
    {y:road_edge-(2*row_height), remaining: 50, speed:1, type: 2, direction: 1, width: 30, 
     px: 7, py: 300, ph: 30},
@@ -108,10 +108,10 @@ var UP = 38, DOWN = 40, LEFT = 37, RIGHT = 39; //Keycodes for direction
               break;
           }
         }
-      },
+      }
     },
     death: {
-      remaining : 0,
+      remaining : 0
     },
     update: function(){
         if(this.y < water_edge){ //Water
@@ -163,7 +163,7 @@ var UP = 38, DOWN = 40, LEFT = 37, RIGHT = 39; //Keycodes for direction
           }
         }
       }
-    },
+    }
   };
   
 //Initial set-up procedure

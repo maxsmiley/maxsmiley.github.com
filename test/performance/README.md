@@ -11,6 +11,8 @@ Everything else (A)
 
 Timeline:
 
-
+Additional:
+The spritesheet.png and death.png make 1 more request than necessary. 
 Personal Rating: A-
+
 
