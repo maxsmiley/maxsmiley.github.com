@@ -21,7 +21,7 @@ var flyObj;
 var objects = new Array(); 
 var objectSpawnRate;
 var objectSpawnPoints = 
-  [{y:road_edge-row_height,     remaining: 50, speed:.9, type: 1, direction: -1, width: 30, 
+  [{y:road_edge-row_height, remaining: 50, speed:.9, type: 1, direction: -1, width: 30, 
     px: 81, py: 263, ph: 30},
    {y:road_edge-(2*row_height), remaining: 50, speed:1, type: 2, direction: 1, width: 30, 
     px: 7, py: 300, ph: 30},
@@ -31,7 +31,7 @@ var objectSpawnPoints =
     px: 45, py: 263, ph: 26},
    {y:road_edge-(5*row_height), remaining: 50, speed:1, type: 5, direction: -1, width: 51, 
     px: 104, py: 301, ph: 26},
-   {y:water_edge-row_height,    remaining: 50, speed:1, type: 6, direction: -1, width: 91, 
+   {y:water_edge-row_height, remaining: 50, speed:1, type: 6, direction: -1, width: 91, 
     px: 16, py: 404, ph: 26},
    {y:water_edge-(2*row_height), remaining: 50, speed:1, type: 7, direction: 1, width: 91, 
     px: 5, py: 230, ph: 26},
