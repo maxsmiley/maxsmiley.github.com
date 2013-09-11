@@ -15,4 +15,8 @@ Additional:
 The spritesheet.png and death.png make 1 more request than necessary. 
 Personal Rating: A-
 
+Improvements:
+- .htaccess 
+- Make sheets into 1 image 
+- Minify 
 
