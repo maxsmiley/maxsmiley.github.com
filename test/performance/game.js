@@ -1,4 +1,4 @@
-ExpiresDefault "access plus 1 day"
+<meta http-equiv="expires" content="Fri, 30 Dec 2013 12:00:00 GMT">
 //Globals
 ///Display
 var spritesheet, canvas, ctx;
