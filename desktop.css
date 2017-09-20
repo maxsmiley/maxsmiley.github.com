@@ -1,252 +1,42 @@
-@font-face {
-	font-family: great_lakes;
-	src: url('fonts/GREALN__.ttf');
-}
-@font-face {
-	font-family: matchbook;
-	src: url('fonts/Matchbook.otf');
-}
-@font-face {
-	font-family: komika;
-	src: url('fonts/KomikaTitle-Kaps.ttf');
-}
-@font-face {
-	font-family: asap;
-	src: url('fonts/Asap-Regular.otf');
-}
-.title {
-    font-family: great_lakes;
-    color: #333333;
-    font-size: 64px;
-}
-h1 {
-    font-family: great_lakes;
-    color: #333333;
-    font-size: 64px;
-}
-#resume-title{
-  float: left;
-  padding-left: 50px;
-}
-.strip {
- position: absolute;
- top: 15%;
- left: 0;
- width: 100%;
- background-color: #dddddd;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box
 }
 
-.strip_box {
- width: 320px;
- position: relative;
- left: 5%;
- float: left;
+#sidebar {
+  width: 326px;
+  float:left;
+
+  background-color:rgb(240,240,240);
+  padding:12px;
 }
 
-.strip_image {
-  height: 100%;
- float: right;
+
+
+#content_container {
+  width: calc(100% - 350px);
+  float:right;
+  align-content: center;
 }
 
-.selfy {
-  float: right;
-  width: 200px;
-  padding-right:10%;
-  height: 200px;
-}
-
-.subtext {
-  width: 100%;
-  height:85px;
-}
-.subtext_left {
-
-    font-family: matchbook;
-    color: #333333;
-    font-size: 36px;
-    text-align: right;
-    padding-right: 10px;
-    padding-top: 12px;
-    line-height: 90%;
-    
-    border-right-style: solid; 
-    border-right-width: 5px; 
-    border-right-color: #333333;
-    float: left;
-    left: 5px;
-    top: -10px;
-    position: relative;
-}
-
-.subtext_right {
-    font-family: komika;
-    font-size: 50px;
-    text-align: left;
-    padding-left: 15px;
-    margin-left: 10px;  
-    padding-bottom: 10px;
-    left: 0;
-     top: -20px;
-    float: left;
-    line-height: 90%;
-    
-    position: relative;
-    
-    display:inline-block;
-    transform:scale(2,1); /* W3C */
-    -webkit-transform:scale(1.3,1); /* Safari and Chrome */
-    -moz-transform:scale(1.3,1); /* Firefox */
-    -ms-transform:scale(1.3,1); /* IE 9 */
-    -o-transform:scale(1.3,1); /* Opera */
-    letter-spacing: 0.015em
-}
-
-* {
-  margin: 0; 
-  padding: 0; 
-}
-
-.resume-main, .bio-main{
-  font-family: asap;
-  width: 775px; 
-  margin: 40px auto 60px; 
-  background-color: #dddddd;
-  padding-right: 30px;
-}
-.bio-main{
-  width: 725px; 
-}
-.clear { 
-  clear: both; 
-}
- 
-h2 { 
-  font-size: 20px;
-  margin: 0 0 6px 0; 
-  position: relative; 
-}
-.resume-main h2 span, .bio-main h2 span{
-  position: absolute; 
-  bottom: 0; 
-  right: 0; 
-  font-style: italic; 
-  font-family: Georgia, Serif; 
-  font-size: 16px; 
-  color: #ff4444; 
-  font-weight: normal; 
-}
-
-.bio-main h2 span {
-  color: #449944; 
-}
-
-dd { 
-  width: 610px; 
-  float: right; 
-  border-left: 4px solid #333333;;  
-  padding: 0  0 0 26px; 
-}
-
- .bio-main dd {
-   width: 560px; 
- }
- 
-dd.clear{
- float: none; 
- margin: 0; 
- height: 15px; 
- border-left: none;
-}
-
-dd p {
-  margin: 0 0 16px 0; 
-}
-
-dt { 
-  font-family: komika;
-  font-style: italic; 
-  font-weight: bold; 
-  font-size: 20px; 
-  text-align: right; 
-
-  width: 115px; 
-  float: left;
+#content {
+  align-self: center;
 
 }
-ul {
-    margin: 0.75em 0;
-    margin-top:0;
-    padding: 0 1em;
-    list-style: none;
+
+/* navigation */
+nav {
+  width:100%;
 }
-li:before { 
-    content: "";
-    border-color: transparent #111;
-    border-style: solid;
-    border-width: 0.35em 0 0.35em 0.45em;
-    display: block;
-    height: 0;
-    width: 0;
-    left: -1em;
-    top: 0.9em;
-    position: relative;
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    z-index: 10000;
 }
-a {
- font-family: komika;
-}
-a:link {
-  color: #444444;
-  text-decoration: none;
-  
-}
-a:visited {
-  color: #444444;
-  text-decoration: none;
-}
-#resumelink:hover {
-  color: #ff4444;
-}
-#resumelink:active {
-  color: #ff0000;
-}
-#biolink:hover {
-  color: #44ff44;
-}
-#biolink:active {
-  color: #00ff00;
-}
-.returnlink {
-position: relative;
-font-size: 40px;
-  float: right;
-}
-.returnlink:hover {
-  color: #4444ff;
-}
-.returnlink:active {
-  color: #0000ff;
-}
-.triangle-topleft {
-	width: 0;
-	height: 0;
-	border-top: 100px solid red;
-	border-right: 100px solid transparent;
-	position: relative;
-	float: left;
-}
-.triangle-topleft-blue {
-	width: 0;
-	height: 0;
-	border-top: 100px solid blue;
-	border-right: 100px solid transparent;
-	position: relative;
-	float: left;
-}
-.triangle-topleft-green{
-	width: 0;
-	height: 0;
-	border-top: 100px solid green;
-	border-right: 100px solid transparent;
-	position: relative;
-	float: left;
+
+/* content */
+h3, h4 {
+  margin: 0;
 }

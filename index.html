@@ -6,22 +6,135 @@
      <link rel="stylesheet" href="iphone.css" media="only screen and (max-device-width:480px)"/>
      <title>Main Page</title>
 </head>
-<body id="linearBg">
-	<div class="strip"> 
-	  <div class="triangle-topleft-blue"></div>
-	  <div class="strip_box">
-	  	<div class="title"> MaxSmiley </div>
-	    <div class="subtext">
-	    	    <div class="subtext_left"> GET TO<br/>KNOW ME</div>
-	    	    <div class="subtext_right">
-	    	      <div> <a id="resumelink" href="resume.html"> &#160;resume </a> </div>
-	            <div> <a id="biolink" href="bio.html">  &#160;biography </a> </div>
-	          </div>
-	    </div>
-	  </div>
-	  <div class="selfy">
-		  <img class="strip_image" src="photo.jpg" width="200" height ="200" alt="a picture me, Max Smiley"/>
-	  </div>
-	</div>
+<body>
+	<div id="main"> 
+		<div class="container clearfix">        
+			<div id="sidebar">
+				<div id="nav-anchor"></div>
+				<div id= "contact">
+					<h1><a href="#education">Max Smiley</a></h1>
+					<ul>
+						<li>email</li>
+						<li>phone</li>
+						<li>address</li>
+					</ul>
+				</div>
+				<nav>
+	                <ul>
+	                    <li><a href="#education">Education</a></li>
+	                    <li><a href="#experience">Experience</a></li>
+	                    <li><a href="#publications">Publications</a></li>
+	                    <li><a href="#projects_activities">Projects &amp; Actitivies</a></li>
+	                    <li><a href="#honors">Honors</a></li>
+	                    <li><a href="#skills_interests">Skills &amp; Interests</a></li>
+	                </ul>
+	            </nav>
+			</div><!-- /#sidebar -->
+			<div id="content_container">
+				<div id="content">
+					<section id="bio">
+					</section>
+					<section id="education">
+						<h2>Education</h2>
+						<div>
+							<h3>Tufts University</h3>
+							<h4>Bachelor of Science Degree, 2014</h4>
+							<h4>Magna Cum Laude, Highest Honor in Thesis</h4>
+							<h4>Computer Science, Cognitive and Brain Science</h4>
+						</div>
+
+						<div>
+							<h3>University of Washington</h3>
+							<h4>Master of Science Degree, 2019</h4>
+							<h4>Current GPA: 3.95</h4>
+							<h4>Computer Science and Engineering</h4>
+						</div>
+					</section>
+					<section id="experience">
+						<h2>Experience</h2>
+						<div>
+							<h3>Microsoft</h3>
+							<h4>Software Engineer II</h4>
+							<h4>September 2014 - Present</h4>
+							<p>Worked in Supply Chain Services, creating cloud-based solutions ranging from APIs and websites to manufacturing software for shopfloor controllers and applied machine learning.</br>
+							Working in Universal Store Team developing software for manual review to detect fraud and inform machine learners for risk evaluation.</p>
+						</div>
+						<div>
+							<h3>Tufts University Dept of Computer Science</h3>
+							<h4>Research Assistant</h4>
+							<h4>August 2010 - Present</h4>
+							<p>Worked with Professor Michael Levin, Director of Tufts Center for Regenerative and Developmental Biology; and Professor Matthias Scheutz, Director of Tufts Human Robotic Interaction Lab. Studied computational modeling and analysis of biomechanics in organic tissue regeneration. Published papers relating to agent-based simulation models of planarean morphegenics and of tree frog mating. Programmed an interface for general agent-based simulations for Tufts research. Was teaching assistant for special topics course Artifical Agents and Autonomy. I continue to help with research and implementation.</p>
+						</div>
+					</section>
+					<section id="publications">
+						<h2>Publications</h2>
+						<div>
+							<div>
+								<h3>Exploring Male Spatial Placement Strategies in a Biologically Plausible Mating Task</h3>
+								<h4>Scheutz, M., Smiley, M., &amp; Boyd S. K. (2013, April 15)</h4>
+								<h4>EEE Symposium on Artificial Life, Grand Copthorne Waterfront Hotel, Singapore.</h4>
+							</div>
+						</div>
+						<div>
+							<div>
+								<h3>Computational models of distributed morphological representations and regenation for damaged structures</h3>
+								<h4>Smiley, M. (2014, May)</h4>
+								<h4>Tufts University </h4>
+								<h4>Senior Thesis with Highest Honors; embargoed for future research</h4>
+							</div>
+						</div>
+						<div>
+							<div>
+								<h3>Dynamic Structure Discovery and Monitoring for Self-Healing 3D Forms.</h3>
+								<h4>Ferrira G., Smiley M., Scheutz M., &amp; Levin M. (2016, July 4)</h4>
+								<h4>ALIFE XV 2016, Cancun Mexico.</h4>
+							</div>
+						</div>
+					</section>
+					<section id="projects_activities">
+						<h2>Projects &amp; Actitivies</h2>
+						<div>
+							<h3>Hackathons</h3>
+							<h4>Multiple Venues</h4>
+							<span>Tufts University 2013:</span><p>Website called that used EchoNest API to fuse any two songs in a melodic manner.</p>
+							<span>Tufts University 2014:</span><p>Won 2nd place in Tuft’s Utility category for creating a website for auditing and planning majors.</p>
+							<span>Microsoft 2015:</span><p>Cross-platform mobile app using  Xamarin that provided dashboard for MS supply chain orders.</p>
+							<span>Microsoft 2016:</span><p>Plugin for Skype that calculates the cost of the meeting over time using GlassDoor API with //whom API.</p>
+						</div>
+						<div>
+							<h3>Mythos, Online Board Game</h3>
+							<h4>2014 - Present</h4>
+							<h4>Developer &amp; Visual Designer</h4>
+							<p>Working with group of friends to create an online card game. Implemented in React framework. Head of design for interface, card design, and artwork. Online and still in development at mythosgame.com.</p>
+						</div>
+						<div>
+							<h3>Robotics Club</h3>
+							<h4>Tufts Univeristy, 2012 - 2014</h4>
+							<h4>Vice President</h4>
+							<p>Lead weekly meetings, taught coding tutorials for club members, managed website and GitHub repository. Managed coding department for club’s competitions. Ran monthly workshop with local elementary school students to teach basic robotics concepts.</p>
+						</div>
+					</section>
+					<section id="honors">
+						<h2>Honors</h2>
+						<div>
+							<h3>Outstanding Undergraduate Researcher Award Honorable Mention</h3>
+							<h4>Computing Research Association, 2013</h4>
+						</div>
+						<div>
+							<h3>Winner of Tufts Coding Challenge</h3>
+							<h4>Microsoft, November 2013
+						</div>
+						<div>
+							<h3>High Potential Employee</h3>
+							<h4>Microsoft, 2014, 2015, 2016</h4>
+							<h4>(The team I joined in 2017 doesnt give these :P)</h4>
+						</div>
+					</section>
+					<section id="skills_interests">
+						<h2>Skills &amp; Interests</h2>
+					</section>
+				</div><!-- /#content -->
+		</div><!-- /#content_container -->
+	</div><!-- /#main -->
 </body>
 </html>
