@@ -1,7 +1,18 @@
+@font-face {
+  font-family: Helvetica Neue;
+  src: url('fonts/HelveticaNeueeTextPro-Light.otf');
+}
+
 body {
+  font-family: "Helvetica Neue", sans-serif;
+  color: rgb(20,20,20);
   margin: 0;
   padding: 0;
   box-sizing:border-box
+}
+
+a, a:visited, a:link, a:hover, a:active {
+  text-decoration: none;
 }
 
 #sidebar {
@@ -10,9 +21,8 @@ body {
 
   background-color:rgb(240,240,240);
   padding:12px;
+  height: 100%;
 }
-
-
 
 #content_container {
   width: calc(100% - 350px);
@@ -22,6 +32,8 @@ body {
 
 #content {
   align-self: center;
+  width: 600px;
+  margin: auto;
 
 }
 
@@ -29,7 +41,6 @@ body {
 nav {
   width:100%;
 }
-
 #sidebar {
     position: fixed;
     top: 0;
@@ -37,6 +48,25 @@ nav {
 }
 
 /* content */
-h3, h4 {
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 23px;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 14px;
+}
+h2 {
+  font-size: 35px;
+  font-weight: 500;
+  margin: 20px 20px 20px 0px;
+}
+h3 {
+  font-size: 18px;
+  font-weight: 700;
   margin: 0;
 }
