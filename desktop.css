@@ -18,32 +18,35 @@ h1, h2, h3, h4, h5 {
   line-height: 23px;
 }
 
-h1 {
-  font-size: 35px;
-  font-weight: 500;
-  margin: 30px 0px 10px 0px;
-}
-
-h2 {
-  font-size: 35px;
-  font-weight: 500;
-  margin: 20px 20px 40px 0px;
-}
-
-h3 {
-  font-size: 18px;
-  font-weight: 700;
-  margin: 0;
-}
-
 a, a:visited, a:link, a:hover, a:active {
   text-decoration: none;
   color: rgb(20,20,20);
 }
 
+
+h1 {
+  font-size: 35px;
+  font-weight: 400;
+  margin: 30px 0px 10px 0px;
+  color: rgb(83,83,83);
+}
+
+h2 {
+  font-size: 35px;
+  font-weight: 400;
+  margin: 20px 20px 40px 0px;
+  color: rgb(100,100,100);
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
 /* navigation */
 #sidebar {
-  width: 326px;
+  width: 306px;
   float:left;
 
   background-color:rgb(243,243,243);
@@ -65,8 +68,6 @@ a, a:visited, a:link, a:hover, a:active {
     border-top: 1px solid rgb(74, 144, 226);
 }
 
-#nav_content {
-}
 nav {
   width:100%;
 }
@@ -83,21 +84,32 @@ nav {
   margin-top: 15px;
 }
 
+/* content */
 #content_container {
+  display: block;
   width: calc(100% - 350px);
   float:right;
-  align-content: center;
 }
 
 #content {
+  display: block;
   align-self: center;
   width: 600px;
   margin: auto;
 }
 
+#content hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid rgb(230, 230, 230);
+  margin-bottom: 40px;
+}
+
 section {
   margin-bottom: 60px;
 }
+
 
 .subsection + .subsection {
   margin-top: 20px;
