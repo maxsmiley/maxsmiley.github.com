@@ -11,6 +11,31 @@ body {
   box-sizing:border-box
 }
 
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 23px;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 14px;
+}
+
+h2 {
+  font-size: 35px;
+  font-weight: 500;
+  margin: 20px 20px 40px 0px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+
 a, a:visited, a:link, a:hover, a:active {
   text-decoration: none;
 }
@@ -37,6 +62,14 @@ a, a:visited, a:link, a:hover, a:active {
 
 }
 
+section {
+  margin-bottom: 60px;
+}
+
+.subsection + .subsection {
+  margin-top: 20px;
+}
+
 /* navigation */
 nav {
   width:100%;
@@ -46,27 +79,11 @@ nav {
     top: 0;
     z-index: 10000;
 }
+.hackathon {
+  margin-top: 5px;
+}
+.hackathon span{
+  margin-right: 10px;
+}
 
 /* content */
-h1, h2, h3, h4, h5 {
-  margin: 0;
-  font-style: normal;
-  font-variant: normal;
-  line-height: 23px;
-}
-
-h1 {
-  font-size: 40px;
-  font-weight: 700;
-  margin: 14px;
-}
-h2 {
-  font-size: 35px;
-  font-weight: 500;
-  margin: 20px 20px 20px 0px;
-}
-h3 {
-  font-size: 18px;
-  font-weight: 700;
-  margin: 0;
-}
