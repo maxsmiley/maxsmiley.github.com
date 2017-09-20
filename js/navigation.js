@@ -22,7 +22,7 @@ $(document).ready(function(){
     $("nav a").click(function(evn){
         evn.preventDefault();
         $('html,body').animate({
-            scrollTop: $(this.hash).offset().top
+            scrollTop: $(this.hash).offset().top - 24
         }, 800);
     });
 
