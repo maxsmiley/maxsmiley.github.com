@@ -110,11 +110,25 @@ section {
   margin-bottom: 60px;
 }
 
-
-.subsection + .subsection {
-  margin-top: 20px;
+.subsection {
+  display: block;
 }
 
+.subsection-content {
+  display: inline-block;
+  width: 500px;
+}
+
+.subsection .thumbnail {
+}
+
+.subsection + .subsection {
+  margin-top: 40px;
+}
+
+.subsection a {
+  color: rgb(74, 144, 226);
+}
 
 #sidebar {
     position: fixed;
