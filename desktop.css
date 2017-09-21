@@ -85,16 +85,16 @@ nav {
 }
 
 /* content */
-#content_container {
+#content-container {
   display: block;
-  width: calc(100% - 350px);
+  width: calc(100% - 390px);
   float:right;
 }
 
 #content {
   display: block;
   align-self: center;
-  width: 700px;
+  width: 600px;
   margin: auto;
 }
 
@@ -120,9 +120,9 @@ section {
 }
 
 .subsection-thumbnail {
-  display: inline-block;
   width: 100px;
-  float:right;
+  float: left;
+  margin-left: -120px;
 }
 
 .subsection + .subsection {
