@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="235px" height="235px" viewBox="0 0 235 235" enable-background="new 0 0 235 235" xml:space="preserve">
+<symbol  id="Star" viewBox="-1.5 -1.5 3 3">
+	<path fill="#C4C3C0" d="M1.5,0c0-0.828-0.672-1.5-1.5-1.5S-1.5-0.828-1.5,0S-0.828,1.5,0,1.5S1.5,0.828,1.5,0z"/>
+</symbol>
+<g>
+	
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="373.5" y1="-110" x2="373.5" y2="-345.0005" gradientTransform="matrix(1 0 0 -1 -256 -110)">
+		<stop  offset="0" style="stop-color:#333366"/>
+		<stop  offset="1" style="stop-color:#2A286B"/>
+	</linearGradient>
+	<path fill="url(#SVGID_1_)" d="M117.5,0.414C52.835,0.414,0.413,52.835,0.413,117.5c0,14.02,2.468,27.463,6.986,39.922L14,152
+		l8-4.5l27.5,16h9l7.5,6h6h10.5l3,4l6,3l5,3l17-9l10-1.5l22-5.5l12-7.5h9.5l5.5-3l4.5,4l8.5,9.5l20,4.5l16-7.5l6-6l0.104-0.09
+		c4.517-12.456,6.982-25.895,6.982-39.91C234.587,52.835,182.166,0.414,117.5,0.414z"/>
+	
+		<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="373.5" y1="-108.5986" x2="373.5" y2="-343.5991" gradientTransform="matrix(1 0 0 -1 -256 -110)">
+		<stop  offset="0" style="stop-color:#3C3C6E;stop-opacity:0.18"/>
+		<stop  offset="1" style="stop-color:#FF4106;stop-opacity:0.16"/>
+	</linearGradient>
+	<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="-0.0869" y1="89.9937" x2="235.0869" y2="89.9937">
+		<stop  offset="0" style="stop-color:#3C3C6E;stop-opacity:0.24"/>
+		<stop  offset="1" style="stop-color:#FF4106;stop-opacity:0.16"/>
+	</linearGradient>
+	<path fill="url(#SVGID_2_)" stroke="url(#SVGID_3_)" d="M117.5,0.414C52.835,0.414,0.413,52.835,0.413,117.5
+		c0,14.02,2.468,27.463,6.986,39.922L14,152l8-4.5l27.5,16h9l7.5,6h6h10.5l3,4l6,3l5,3l17-9l10-1.5l22-5.5l12-7.5h9.5l5.5-3l4.5,4
+		l8.5,9.5l20,4.5l16-7.5l6-6l0.104-0.09c4.517-12.456,6.982-25.895,6.982-39.91C234.587,52.835,182.166,0.414,117.5,0.414z"/>
+	<path fill="#1C1C30" d="M221.5,163.5l-16,7.5l-20-4.5L177,157l-4.5-4l-5.5,3h-9.5l-12,7.5l-22,5.5l-10,1.5l-17,9l-5-3l-6-3l-3-4H72
+		h-6l-7.5-6h-9l-27.5-16l-8,4.5l-6.601,5.422c16.324,45.008,59.456,77.164,110.101,77.164c50.65,0,93.784-32.162,110.104-77.176
+		l-0.104,0.09L221.5,163.5z"/>
+</g>
+<g>
+	<g>
+		
+			<use xlink:href="#Star"  width="3" height="3" x="-1.5" y="-1.5" transform="matrix(1 0 0 -1 135.1387 30.7759)" overflow="visible"/>
+		
+			<use xlink:href="#Star"  width="3" height="3" x="-1.5" y="-1.5" transform="matrix(1 0 0 -1 71.9014 30.7334)" overflow="visible"/>
+		
+			<use xlink:href="#Star"  width="3" height="3" x="-1.5" y="-1.5" transform="matrix(1 0 0 -1 84.124 30.3818)" overflow="visible"/>
+		
+			<use xlink:href="#Star"  width="3" height="3" x="-1.5" y="-1.5" transform="matrix(1 0 0 -1 124.2197 36.728)" overflow="visible"/>
+		
+			<use xlink:href="#Star"  width="3" height="3" x="-1.5" y="-1.5" transform="matrix(1 0 0 -1 139.165 44.5874)" overflow="visible"/>
+		
+			<use xlink:href="#Star"  width="3" height="3" x="-1.5" y="-1.5" transform="matrix(1 0 0 -1 150.5479 49.1924)" overflow="visible"/>
+		
+			<use xlink:href="#Star"  width="3" height="3" x="-1.5" y="-1.5" transform="matrix(1 0 0 -1 152.7998 55.8848)" overflow="visible"/>
+		
+			<use xlink:href="#Star"  width="3" height="3" x="-1.5" y="-1.5" transform="matrix(1 0 0 -1 146.5986 56.3013)" overflow="visible"/>
+		
+			<use xlink:href="#Star"  width="3" height="3" x="-1.5" y="-1.5" transform="matrix(1 0 0 -1 126.9512 61.9272)" overflow="visible"/>
+		
+			<use xlink:href="#Star"  width="3" height="3" x="-1.5" y="-1.5" transform="matrix(1 0 0 -1 110.1367 66.1084)" overflow="visible"/>
+		
+			<use xlink:href="#Star"  width="3" height="3" x="-1.5" y="-1.5" transform="matrix(1 0 0 -1 103.417 69.9663)" overflow="visible"/>
+		
+			<use xlink:href="#Star"  width="3" height="3" x="-1.5" y="-1.5" transform="matrix(1 0 0 -1 101.6162 63.9126)" overflow="visible"/>
+		
+			<use xlink:href="#Star"  width="3" height="3" x="-1.5" y="-1.5" transform="matrix(1 0 0 -1 101.1079 3.8501)" overflow="visible"/>
+		
+			<use xlink:href="#Star"  width="3" height="3" x="-1.5" y="-1.5" transform="matrix(1 0 0 -1 107.3374 4.0859)" overflow="visible"/>
+		
+			<use xlink:href="#Star"  width="3" height="3" x="-1.5" y="-1.5" transform="matrix(1 0 0 -1 12.4531 70.0449)" overflow="visible"/>
+		
+			<use xlink:href="#Star"  width="3" height="3" x="-1.5" y="-1.5" transform="matrix(1 0 0 -1 94.5303 141.8965)" overflow="visible"/>
+		
+			<use xlink:href="#Star"  width="3" height="3" x="-1.5" y="-1.5" transform="matrix(1 0 0 -1 105.0732 168.5596)" overflow="visible"/>
+		
+			<use xlink:href="#Star"  width="3" height="3" x="-1.5" y="-1.5" transform="matrix(1 0 0 -1 122.0879 164.6553)" overflow="visible"/>
+		
+			<use xlink:href="#Star"  width="3" height="3" x="-1.5" y="-1.5" transform="matrix(1 0 0 -1 171.8076 139.9414)" overflow="visible"/>
+		
+			<use xlink:href="#Star"  width="3" height="3" x="-1.5" y="-1.5" transform="matrix(1 0 0 -1 219.3701 137.2998)" overflow="visible"/>
+		
+			<use xlink:href="#Star"  width="3" height="3" x="-1.5" y="-1.5" transform="matrix(1 0 0 -1 175.5088 100.5786)" overflow="visible"/>
+		
+			<use xlink:href="#Star"  width="3" height="3" x="-1.5" y="-1.5" transform="matrix(1 0 0 -1 163.207 106.3389)" overflow="visible"/>
+		
+			<use xlink:href="#Star"  width="3" height="3" x="-1.5" y="-1.5" transform="matrix(1 0 0 -1 152.3662 116.0991)" overflow="visible"/>
+		
+			<use xlink:href="#Star"  width="3" height="3" x="-1.5" y="-1.5" transform="matrix(1 0 0 -1 168.4209 119.085)" overflow="visible"/>
+		
+			<use xlink:href="#Star"  width="3" height="3" x="-1.5" y="-1.5" transform="matrix(1 0 0 -1 21.877 104.0469)" overflow="visible"/>
+		
+			<use xlink:href="#Star"  width="3" height="3" x="-1.5" y="-1.5" transform="matrix(1 0 0 -1 59.1616 100.5747)" overflow="visible"/>
+		
+			<use xlink:href="#Star"  width="3" height="3" x="-1.5" y="-1.5" transform="matrix(1 0 0 -1 63.3096 121.6572)" overflow="visible"/>
+		
+			<use xlink:href="#Star"  width="3" height="3" x="-1.5" y="-1.5" transform="matrix(1 0 0 -1 75.1104 99.9482)" overflow="visible"/>
+		
+			<use xlink:href="#Star"  width="3" height="3" x="-1.5" y="-1.5" transform="matrix(1 0 0 -1 65.9741 95.6963)" overflow="visible"/>
+		
+			<use xlink:href="#Star"  width="3" height="3" x="-1.5" y="-1.5" transform="matrix(1 0 0 -1 14.1318 142.7266)" overflow="visible"/>
+		
+			<use xlink:href="#Star"  width="3" height="3" x="-1.5" y="-1.5" transform="matrix(1 0 0 -1 13.3267 131.2432)" overflow="visible"/>
+		
+			<use xlink:href="#Star"  width="3" height="3" x="-1.5" y="-1.5" transform="matrix(1 0 0 -1 111.4165 51.1294)" overflow="visible"/>
+		
+			<use xlink:href="#Star"  width="3" height="3" x="-1.5" y="-1.5" transform="matrix(1 0 0 -1 210.4062 64.3491)" overflow="visible"/>
+		
+			<use xlink:href="#Star"  width="3" height="3" x="-1.5" y="-1.5" transform="matrix(1 0 0 -1 180.5225 22.7705)" overflow="visible"/>
+		
+			<use xlink:href="#Star"  width="3" height="3" x="-1.5" y="-1.5" transform="matrix(1 0 0 -1 161.4014 11.5371)" overflow="visible"/>
+		
+			<use xlink:href="#Star"  width="3" height="3" x="-1.5" y="-1.5" transform="matrix(1 0 0 -1 27.1045 48.623)" overflow="visible"/>
+		
+			<use xlink:href="#Star"  width="3" height="3" x="-1.5" y="-1.5" transform="matrix(1 0 0 -1 125.7158 143.625)" overflow="visible"/>
+		
+			<use xlink:href="#Star"  width="3" height="3" x="-1.5" y="-1.5" transform="matrix(1 0 0 -1 75.0088 163.2686)" overflow="visible"/>
+	</g>
+</g>
+<path fill="none" stroke="#EAEAEA" stroke-width="15" d="M56.437,196.374V65.112l62.28,52.503l62.279-52.503v131.262V65.112
+	l-62.279,52.503l-62.28-52.503V196.374z"/>
+<use xlink:href="#Star"  width="3" height="3" x="-1.5" y="-1.5" transform="matrix(1 0 0 -1 198.3701 127.2998)" overflow="visible"/>
+<use xlink:href="#Star"  width="3" height="3" x="-1.5" y="-1.5" transform="matrix(1 0 0 -1 219.3701 155.2998)" overflow="visible"/>
+</svg>
