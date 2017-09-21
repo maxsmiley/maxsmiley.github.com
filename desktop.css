@@ -94,7 +94,7 @@ nav {
 #content {
   display: block;
   align-self: center;
-  width: 600px;
+  width: 700px;
   margin: auto;
 }
 
@@ -116,10 +116,13 @@ section {
 
 .subsection-content {
   display: inline-block;
-  width: 500px;
+  width: 600px;
 }
 
-.subsection .thumbnail {
+.subsection-thumbnail {
+  display: inline-block;
+  width: 100px;
+  float:right;
 }
 
 .subsection + .subsection {
