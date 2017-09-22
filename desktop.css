@@ -53,7 +53,12 @@ h3 {
 
   padding: 22px;
   height: 100%;
+
+  position: fixed;
+  top: 0;
+  z-index: 10000;
 }
+
 
 #photo {
    display: block;
@@ -134,16 +139,60 @@ section {
 
 .subsection a {
   color: rgb(74, 144, 226);
+  font-weight: bolder;
 }
 
-#sidebar {
-    position: fixed;
-    top: 0;
-    z-index: 10000;
+.subsection-footer {
+  margin-top: 10px;
 }
+
+.toggle-expand {
+  display: none;
+}
+
+.toggle-expand-label {
+  color: rgb(74, 144, 226);
+  font-weight: bolder;
+}
+
+.expandable {
+  overflow: hidden;
+  max-height: 0px;
+  -webkit-transition-property: height; /* Safari */
+  transition-property: max-height;
+  transition: max-height 0.8s;
+}
+
+.expandable div {
+  margin-top: 10px;
+}
+
+.toggle-expand:checked ~ .expandable {
+  max-height: 400px;
+}
+
+.course-list label {
+  display: inline-block;
+  padding: 2px 5px 2px 5px;
+  margin: 3px 2px 4px 0px;
+}
+
+#computer-science label {
+  background-color:rgb(101,209,222);
+}
+
+#cognitive-science label {
+  background-color:rgb(101,239,176);
+}
+
+#computer-science-uw label {
+  background-color:rgb(161,179,252);
+}
+
 .hackathon {
   margin-top: 5px;
 }
+
 .hackathon span{
   margin-right: 10px;
 }
