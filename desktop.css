@@ -17,6 +17,8 @@ body {
   box-sizing: border-box
   font-weight: normal;
   background-color: rgb(253,255,255);
+  /*background-color: rgb(255,245,225); nice compliment but might be overdesigned*/
+  /*background-color: rgb(255,254,250); more subtle version of above*/
 }
 
 h1, h2, h3, h4, h5 {
@@ -35,14 +37,17 @@ a, a:visited, a:link, a:hover, a:active {
 
 h1 {
   font-size: 35px;
+  font-weight: lighter;
   margin: 30px 0px 10px 0px;
-  color: rgb(83,83,83);
+  color: rgb(103,103,103);
 }
 
 h2 {
   font-size: 35px;
+  font-weight: lighter;
   margin: 20px 20px 40px 0px;
-  color: rgb(100,100,100);
+  color: rgb(130,130,130);
+  color: #22A39F;
 }
 
 
@@ -170,6 +175,7 @@ section {
 .toggle-expand-label {
   color: rgb(74, 144, 226);
   font-weight: bolder;
+  cursor: pointer;
 }
 
 .expandable {
@@ -186,6 +192,15 @@ section {
 
 .toggle-expand:checked ~ .expandable {
   max-height: 350px;
+}
+
+.toggle-expand:checked ~ .toggle-expand-label img {
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+     -webkit-transition-delay: 0.1s; /* Safari */
+    transition-delay: 0.1s;
+
 }
 
 .course-list label {
