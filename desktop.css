@@ -191,7 +191,7 @@ section {
 }
 
 .toggle-expand:checked ~ .expandable {
-  max-height: 350px;
+  max-height: 330px;
 }
 
 .toggle-expand:checked ~ .toggle-expand-label img {
