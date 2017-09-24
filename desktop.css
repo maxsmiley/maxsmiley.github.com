@@ -98,6 +98,16 @@ nav {
   margin-top: 15px;
 }
 
+#contact span, #contact span a{
+  font-style: italic;
+  color: rgb(70,70,70);
+}
+
+ #contact span a {
+  text-decoration: underline;
+ }
+
+
 /* content */
 #content-container {
   display: block;
@@ -247,6 +257,7 @@ section {
   .subsection-thumbnail {
     opacity: 0;
   }
+  
 }
 
 @media screen and (max-width: 1000px) {
@@ -281,8 +292,7 @@ section {
   #content {
     min-width: 600px;
   }
-  nav {
-  }
+  
   #navigation ul {
     display: inline-block;
     margin: auto;
