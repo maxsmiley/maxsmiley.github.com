@@ -45,16 +45,16 @@ h2 {
 
 /* navigation */
 #sidebar {
-  width: 306px;
-  float:left;
-
-  background-color:rgb(71,179,156);
+  position: fixed;
 
   height: 100%;
+  width: 306px;
 
-  position: fixed;
+  float:left;
   top: 0;
   z-index: 10000;
+
+  background-color:rgb(71,179,156);
 }
 
 #photo-contact {
@@ -317,6 +317,7 @@ footer {
   #content {
     min-width: 600px;
     margin: auto;
+    padding-left: 25px;
   }
 
   #navigation {
@@ -349,7 +350,7 @@ footer {
   }
 
   #content {
-    min-width: 600px;
+    padding-left: 20px;
   }
 }
 
