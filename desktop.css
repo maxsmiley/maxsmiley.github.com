@@ -400,6 +400,9 @@ footer {
 
 /* devices */
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) { 
+  #html {
+    font-family: 'Roboto', sans-serif;
+  }
   #sidebar {
     height: 218px;
   }
