@@ -6,6 +6,16 @@ html {
 
 @font-face {
   font-family: "Helvetica Neue";
+  src: url('fonts/HelveticaNeueeTextPro-Bold.otf');
+  font-weight: bolder;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url('fonts/HelveticaNeueeTextPro-Md.otf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Helvetica Neue";
   src: url('fonts/HelveticaNeueeTextPro-Md.otf');
   font-weight: normal;
 }
@@ -209,7 +219,7 @@ section {
 
 .toggle-expand-label {
   color: rgb(74, 144, 226);
-  font-weight: bolder;
+  font-weight: 500;
   cursor: pointer;
 }
 
@@ -390,23 +400,28 @@ footer {
 
 /* devices */
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) { 
-  html, body {
-    font-family: "Verdana";
-  }
   #sidebar {
     height: 218px;
   }
   #title {
-    font-size: 44px;
+    margin-top: 8px;
+    font-size: 52px;
   }
 
   #contact span, #contact span a {
-    font-size: 22px;
+    font-size: 32px;
   }
 
   nav {
     font-size: 20px;
     padding-left: 30px;
+  }
+
+  .nav-link-long {
+    display: none;
+  }
+  .nav-link-short {
+    display: inline-block;
   }
 
   .nav-link-short {
@@ -419,22 +434,30 @@ footer {
     padding: 0;
   }
 
+  #content hr {
+    border-top: 4px solid rgb(230, 230, 230);
+  }
+
   #content, #footer-content {
     display: block;
     width: 90%;
-    font-size: 32px;
+    font-size: 38px;
     padding-left: 0;
   }
 
-  h2 {
-    font-size: 44px;
-  }
-  .left {
-    width: 65%;
+  .toggle-expand:checked ~ .expandable {
+    max-height: 1000px;
   }
 
+  h2 {
+    font-size: 52px;
+  }
+  .left {
+    display: block;
+    width: 100%
+  }
   .right {
-    width: 35%;
+    display: none;
   }
 
   .toggle-expand-label img, .subsection-footer a img{
