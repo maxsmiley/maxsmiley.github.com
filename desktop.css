@@ -379,6 +379,13 @@ footer {
   #content {
     padding-left: 20px;
   }
+
+  .nav-link-long {
+    display: none;
+  }
+  .nav-link-short {
+    display: inline-block;
+  }
 }
 
 /* devices */
@@ -402,11 +409,7 @@ footer {
     padding-left: 30px;
   }
 
-  .nav-link-long {
-    display: none;
-  }
   .nav-link-short {
-    display: inline-block;
     font-size: 30px;
   }
 
