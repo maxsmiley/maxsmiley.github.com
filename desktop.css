@@ -7,13 +7,14 @@ html {
 @font-face {
   font-family: "Helvetica Neue";
   src: url('fonts/HelveticaNeueeTextPro-Md.otf');
-  font-weight: bold;
+  font-weight: normal;
 }
 @font-face {
   font-family: "Helvetica Neue";
   src: url('fonts/HelveticaNeueeTextPro-Light.otf');
-  font-weight: normal;
+  font-weight: lighter;
 }
+
 
 body {
   font-family: "Helvetica Neue", sans-serif;
@@ -374,6 +375,9 @@ footer {
 
 /* devices */
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) { 
+  html, body {
+    font-family: "Verdana";
+  }
   #title {
     font-size: 44px;
   }
@@ -397,6 +401,10 @@ footer {
     width: 90%;
     font-size: 26px;
     padding-left: 0;
+  }
+
+  #experience .left {
+    width: 60%;
   }
 
   footer {
