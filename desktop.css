@@ -118,6 +118,10 @@ nav.stick {
   box-shadow: 0 0 4px rgba(0,0,0,.2);
 }
 
+.nav-link-short {
+  display: none;
+}
+
 #navigation li {
   list-style: none;
 }
@@ -339,6 +343,10 @@ footer {
     padding-left: 25px;
   }
 
+  .toggle-expand:checked ~ .expandable {
+    max-height: 780px;
+  }
+
   #navigation {
     align-content: center;
   }
@@ -378,6 +386,9 @@ footer {
   html, body {
     font-family: "Verdana";
   }
+  #sidebar {
+    height: 218px;
+  }
   #title {
     font-size: 44px;
   }
@@ -388,6 +399,15 @@ footer {
 
   nav {
     font-size: 20px;
+    padding-left: 30px;
+  }
+
+  .nav-link-long {
+    display: none;
+  }
+  .nav-link-short {
+    display: inline-block;
+    font-size: 30px;
   }
 
   #content-container {
@@ -399,12 +419,23 @@ footer {
   #content, #footer-content {
     display: block;
     width: 90%;
-    font-size: 26px;
+    font-size: 32px;
     padding-left: 0;
   }
 
-  #experience .left {
-    width: 60%;
+  h2 {
+    font-size: 44px;
+  }
+  .left {
+    width: 65%;
+  }
+
+  .right {
+    width: 35%;
+  }
+
+  .toggle-expand-label img, .subsection-footer a img{
+    min-height: 28px;
   }
 
   footer {

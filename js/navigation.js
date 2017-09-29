@@ -19,10 +19,14 @@ $(document).ready(function(){
      * This part causes smooth scrolling using scrollto.js
      * We target all a tags inside the nav, and apply the scrollto.js to it.
      */
-    $("nav a").click(function(evn){
+    $("nav a").click(function(evn) {
+        var offset = 34;
+        if ($(window).width() < 1000) {
+            offset = 84;
+        }
         evn.preventDefault();
         $('html,body').animate({
-            scrollTop: $(this.hash).offset().top - 24
+            scrollTop: $(this.hash).offset().top - offset
         }, 800);
     });
 
