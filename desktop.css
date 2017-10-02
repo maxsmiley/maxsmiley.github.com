@@ -105,11 +105,14 @@ h2 {
   display: block;
 }
 #sidebar #contact span, #sidebar #contact span a, 
-#sidebar #contact span a:hover, 
 #sidebar #contact span a:visited, 
 #sidebar #contact span a:active, 
 #sidebar #contact span a:link {
   color: rgb(225,185,160); 
+}
+
+#sidebar #contact span a:hover {
+  color: rgb(240,200,175); 
 }
 
 #navigation ul {
@@ -208,7 +211,7 @@ section {
   margin-top: 40px;
 }
 
-.subsection a {
+.subsection a, .subsection a:active, .subsection a:link, .subsection a:visited, .subsection a:hover {
   color: rgb(74, 144, 226);
   font-weight: bolder;
   text-decoration: none;
@@ -226,6 +229,10 @@ section {
   color: rgb(74, 144, 226);
   font-weight: bold;
   cursor: pointer;
+}
+
+.toggle-expand-label:hover, .subsection a:hover  {
+  color: rgb(34, 114, 196);
 }
 
 .expandable {
