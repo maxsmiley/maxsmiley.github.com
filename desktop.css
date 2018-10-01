@@ -189,6 +189,20 @@ section {
   font-weight: bold;
 }
 
+
+.subsection-region {
+  margin-top: 5px;
+}
+
+.subsection-region span{
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.subsection-region + .subsection-region {
+  margin-top: 12px;
+}
+
 .left {
   float: left;
   text-align: left;
@@ -280,18 +294,6 @@ section {
   background-color: rgb(172,172,202);
 }
 
-.hackathon {
-  margin-top: 5px;
-}
-
-.hackathon span{
-  margin-right: 10px;
-  font-weight: bold;
-}
-
-.hackathon + .hackathon {
-  margin-top: 12px;
-}
 /* footer */
 footer {
   display: block;
