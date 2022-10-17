@@ -14,7 +14,7 @@
 		<div class="container clearfix">   
 			<div id="sidebar">
 				<div id="photo-contact">
-					<img id="photo" src="images/photo.jpg" alt="Me!" style="width:180px;height:180px;">
+					<img id="photo" src="images/selfie.jpg" alt="Me!" style="width:180px;height:180px;">
 					<hr>
 					<div id="contact">
 						<h2 id="title"><a href="#bio">Max Smiley</a></h2>
@@ -75,6 +75,42 @@
 						<h2 class="section-header">Education</h2>
 						<div class="subsection">
 							<div class="subsection-thumbnail">
+								<img class="thumbnail-image" src="images/uw.png" style="width:65px;height:44px;margin-top:10px;">
+							</div>
+							<div class="subsection-header">
+								<div class="left">
+									<h4 class="subsection-title">University of Washington</h4>
+									<h4>Master of Science Degree</h4>
+									<h4>Magna Cum Laude</h4>
+									<h4>Computer Science and Engineering</h4>
+								</div>
+								<div class="right">
+									<h4>2016 - 2020</h4>
+									<h4>Seattle, WA</h4>
+								</div>
+							</div>
+							<div class="subsection-footer">
+								<input class="toggle-expand" id="uw-courses-toggle" type="checkbox" >
+								<label class="toggle-expand-label" for="uw-courses-toggle">
+								 	<img src="images/expand2.png" style="height:15px;vertical-align: middle;margin-bottom:2px;">
+									Courses
+								</label>
+								<div class="expandable block-items-list" id="uw-courses">
+								 	<div id="computer-science-uw">
+										<label>Database Management</label>
+										<label>Data Mining</label>
+									 	<label>Parallel Computation</label> 
+									 	<label>Current Research in Computer Science</label>
+									 	<label>Software Engineering Principles</label>
+									 	<label>Natural Language Processing</label>
+									 	<label>Computation Biology</label>
+									 	<label>Game Theory</label>
+									</div>
+								 </div>
+							</div>
+						</div>
+						<div class="subsection">
+							<div class="subsection-thumbnail">
 								<img class="thumbnail-image" src="images/tufts.png" style="width:65px;height:65px;">
 							</div>
 							<div class="subsection-header">
@@ -124,46 +160,34 @@
 								 </div>
 							</div>
 						</div>
-						<div class="subsection">
-							<div class="subsection-thumbnail">
-								<img class="thumbnail-image" src="images/uw.png" style="width:65px;height:44px;margin-top:10px;">
-							</div>
-							<div class="subsection-header">
-								<div class="left">
-									<h4 class="subsection-title">University of Washington</h4>
-									<h4>Master of Science Degree</h4>
-									<h4>Magna Cum Laude</h4>
-									<h4>Computer Science and Engineering</h4>
-								</div>
-								<div class="right">
-									<h4>2016 - 2020</h4>
-									<h4>Seattle, WA</h4>
-								</div>
-							</div>
-							<div class="subsection-footer">
-								<input class="toggle-expand" id="uw-courses-toggle" type="checkbox" >
-								<label class="toggle-expand-label" for="uw-courses-toggle">
-								 	<img src="images/expand2.png" style="height:15px;vertical-align: middle;margin-bottom:2px;">
-									Courses
-								</label>
-								<div class="expandable block-items-list" id="uw-courses">
-								 	<div id="computer-science-uw">
-										<label>Database Management</label>
-										<label>Data Mining</label>
-									 	<label>Parallel Computation</label> 
-									 	<label>Current Research in Computer Science</label>
-									 	<label>Software Engineering Principles</label>
-									 	<label>Natural Language Processing</label>
-									 	<label>Computation Biology</label>
-									 	<label>Game Theory</label>
-									</div>
-								 </div>
-							</div>
-						</div>
 					</section>
 					<hr>
 					<section id="experience">
 						<h2>Experience</h2>
+						<div class="subsection">
+							<div class="subsection-thumbnail">
+								<img class="thumbnail-image" src="images/riot.png" style="width:63px;height:63px;">
+							</div>
+							<div class="subsection-header">
+								<div class="left">
+									<h4 class="subsection-title">Riot Games</h4>
+									<h4>Staff Engineer</h4>
+								</div>
+								<div class="right">
+									<h4>2020 - Present</h4>
+									<h4>Bellevue, WA</h4>
+								</div>
+							</div>
+							<p>
+								<div class="subsection-region">Currently working as a Staff enginner on VALORANT's Store team. Set technical direction, architect full-stack solutions, drive cross-team culture and processes. Responsible for mentoring and growing more junior devs. </div>
+							</p>
+							<div class="subsection-footer">
+								<a href="https://playvalorant.com/">
+									<img src="images/link.png" style="height:14px;">
+									VALORANT
+								</a>
+							</div>
+						</div>
 						<div class="subsection">
 							<div class="subsection-thumbnail">
 								<img class="thumbnail-image" src="images/microsoft.png" style="width:63px;height:63px;">
@@ -174,14 +198,13 @@
 									<h4>Senior Software Engineer</h4>
 								</div>
 								<div class="right">
-									<h4>Sept 2014 - Present</h4>
+									<h4>2014 - 2020</h4>
 									<h4>Redmond, WA</h4>
 								</div>
 							</div>
 							<p>
-								<div class="subsection-region">Worked in Supply Chain Services, creating cloud-based solutions ranging from APIs and websites to manufacturing software for shopfloor controllers and applied machine learning.</div>
-								<div class="subsection-region">Full stack development in Universal Store Team building apps and services for manual review to detect fraud and inform machine learners for risk evaluation and credit review. Work directly with customers to develop fully featured front end interfaces. Design and implement backend services used by fraud agents across the globe every minute. Responsible for mentoring and onboarding FTEs and interns. Lead small team in building new service portal for provisioning credit to customers.</div> 
-								<div class="subsection-region">Currently working in Dynamics Fraud Protection on backend services, own the provisioning pipeline for resource and contribute to our New Orleans stack for merchant services.</div> 
+								<div class="subsection-region">Worked in both Supply Chain Services and Universal Store Team, created cloud-based and full stack solutions for shopfloor controllers and applied machine learning. Coordinated directly with customers to develop fully featured front end interfaces.</div>  
+								<div class="subsection-region">Was responsible for mentoring and onboarding FTEs and interns. Lead small team in building new service portal for provisioning credit to customers. Owned the provisioning pipeline for resource creation and contributed to New Orleans stack for merchant services.</div> 
 							</p>
 						</div>
 						<div class="subsection">
@@ -194,11 +217,12 @@
 									<h4>Research Assistant</h4>
 								</div>
 								<div class="right">
-									<h4>Aug 2010 - Present</h4>
+									<h4>2010 - 2016</h4>
 									<h4>Redmond, WA</h4>
 								</div>
 							</div>
-							<p>Worked with Professor Michael Levin, Director of Tufts Center for Regenerative and Developmental Biology; and Professor Matthias Scheutz, Director of Tufts Human Robotic Interaction Lab. Studied computational modeling and analysis of biomechanics in organic tissue regeneration. Published papers relating to agent-based simulation models of planarean morphegenics and of tree frog mating. Programmed an interface for general agent-based simulations for Tufts research. Was teaching assistant for special topics course Artifical Agents and Autonomy. I continue to help with research and implementation.</p>
+							<div class="subsection-region">Conducted research with Professor Michael Levin, Director of Tufts Center for Regenerative and Developmental Biology; and Professor Matthias Scheutz, Director of Tufts Human Robotic Interaction Lab. Studied computational modeling and analysis of biomechanics in organic tissue regeneration. </div>
+							<div class="subsection-region">Published papers relating to agent-based simulation models of planarean morphegenics and of tree frog mating. Programmed an interface for general agent-based simulations for Tufts research. Was teaching assistant for special topics course Artifical Agents and Autonomy. I continue to help with research and implementation.</div>
 						</div>
 					</section>
 					<hr>
@@ -271,7 +295,7 @@
 									<h4>Seattle, WA</h4>
 								</div>
 							</div>
-							<p>A bot user that offers a wide variety of functionalities missing from Discord. Includes creating polls, subscription and announcements to custom topics, generating chains of reacts, birthday and event notifications, server metrics and much more. </p>
+							<p>A bot that offers a wide variety of functionalities missing from Discord. Includes creating polls, subscription and announcements to custom topics, generating chains of reacts, birthday and event notifications, server metrics and much more. </p>
 						</div>
 						<div class="subsection">
 							<div class="subsection-thumbnail">
@@ -309,7 +333,7 @@
 								</div>
 							</div>
 							
-							<p>Working with group of friends to create an online card game. Implemented in React framework. Head of design for interface, card design, and artwork. Online and still in development at mythosgame.com.</p>
+							<p>Built an online multiplayer deckbuilding game with a group of friends. Implemented in React framework. Head of design for interface, card design, and artwork.</p>
 							<div class="subsection-footer">
 								<a href="https://mythosgame.com/">
 									<img src="images/link.png" style="height:14px;">
@@ -376,7 +400,9 @@
 								<label>C#</label>
 								<label>Java</label>
 								<label>JavaScript</label>
+								<label>Golang</label>
 								<label>Python</label>
+								<label>Unreal</label>
 								<label>Arduino</label>
 								<label>Processing</label>
 								<label>HTML</label>
