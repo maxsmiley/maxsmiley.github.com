@@ -1,1 +1,1 @@
-maxsmiley.github.com
+https://maxsmiley.github.io/
